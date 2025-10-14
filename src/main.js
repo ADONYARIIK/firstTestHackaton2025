@@ -1,0 +1,23 @@
+import Phaser from 'phaser';
+import BootScene from './scenes/BootScene';
+import PreloadScene from './scenes/PreloadScene';
+import MainMenuScene from './scenes/MainMenuScene';
+import GameScene from './scenes/GameScene';
+
+const config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    backgroundColor: '#9e2424',
+    parent: 'game-container',
+    physics: {
+        default: 'matter',
+        matter: {
+            gravity: { y: 1 },
+            debug: true
+        }
+    },
+    scene: [BootScene, PreloadScene, MainMenuScene, GameScene]
+};
+
+new Phaser.Game(config);
