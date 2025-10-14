@@ -32,6 +32,7 @@ Before you begin, ensure you have the following installed:
 ### 📦 Installation
 
 1. **Clone the repository:**
+<<<<<<< HEAD
    
    ```bash
    git clone [https://github.com/your-username/phaser-firebase-game.git](https://github.com/your-username/phaser-firebase-game.git)
@@ -58,6 +59,35 @@ Before you begin, ensure you have the following installed:
    firebase init
    # During init, make sure to set the Public Directory to 'dist' for hosting
    ```
+=======
+  
+  ```bash
+  git clone [https://github.com/your-username/phaser-firebase-game.git](https://github.com/your-username/phaser-firebase-game.git)
+  cd phaser-firebase-game
+  ```
+  
+2. **Install JavaScript dependencies:**
+  
+  ```bash
+  npm install
+  ```
+  
+3. **Install Python dependencies** (if required by your tools):
+  
+  ```bash
+  # Assuming a requirements.txt file exists for Python dependencies
+  pip install -r requirements.txt
+  ```
+  
+4. **Initialize Firebase** (if setting up for the first time):
+  
+  ```bash
+  firebase login
+  firebase init
+  # During init, make sure to set the Public Directory to 'dist' for hosting
+  ```
+  
+>>>>>>> 059ae6abe6922f63a47782a459fdf322c7a0f5eb
 
 ---
 
@@ -65,6 +95,7 @@ Before you begin, ensure you have the following installed:
 
 Use these npm scripts to manage your development workflow:
 
+<<<<<<< HEAD
 | Command                         | Description                                                                                      |
 |:------------------------------- |:------------------------------------------------------------------------------------------------ |
 | `npm run dev`                   | Starts the local development server with **Hot Module Replacement (HMR)**.                       |
@@ -72,6 +103,15 @@ Use these npm scripts to manage your development workflow:
 | `npm run preview`               | Serves the production-ready build from the `dist` directory locally for final testing.           |
 | `npm run deploy`                | Runs the production build and deploys the `dist` folder to **Firebase Hosting**.                 |
 | `npm run build:normalmap-atlas` | Executes the Python script to generate the normal map texture atlas.                             |
+=======
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Starts the local development server with **Hot Module Replacement (HMR)**. |
+| `npm run build` | Compiles and optimizes the project for production, outputting files to the **`dist`** directory. |
+| `npm run preview` | Serves the production-ready build from the `dist` directory locally for final testing. |
+| `npm run deploy` | Runs the production build and deploys the `dist` folder to **Firebase Hosting**. |
+| `npm run build:normalmap-atlas` | Executes the Python script to generate the normal map texture atlas. |
+>>>>>>> 059ae6abe6922f63a47782a459fdf322c7a0f5eb
 
 ---
 
@@ -80,6 +120,7 @@ Use these npm scripts to manage your development workflow:
 To deploy your game to the live web via Firebase Hosting:
 
 1. **Log in to Firebase:**
+<<<<<<< HEAD
    
    ```bash
    firebase login
@@ -99,6 +140,28 @@ To deploy your game to the live web via Firebase Hosting:
    npm run build
    npm run deploy
    ```
+=======
+  
+  ```bash
+  firebase login
+  ```
+  
+2. **Initialize Firebase (if not already):**
+  
+  ```bash
+  firebase init
+  ```
+  
+3. **Make sure the `public` directory is set to `dist`**
+  
+4. **Build and deploy:**
+  
+  ```bash
+  npm run build
+  npm run deploy
+  ```
+  
+>>>>>>> 059ae6abe6922f63a47782a459fdf322c7a0f5eb
 
 ---
 
