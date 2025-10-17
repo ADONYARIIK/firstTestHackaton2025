@@ -1,6 +1,5 @@
 import Phaser from 'phaser';
 import BootScene from './scenes/BootScene';
-import PreloadScene from './scenes/PreloadScene';
 import MainMenuScene from './scenes/MainMenuScene';
 import GameScene from './scenes/GameScene';
 
@@ -17,7 +16,7 @@ const config = {
             debug: true
         }
     },
-    scene: [BootScene, PreloadScene, MainMenuScene, GameScene]
+    scene: [BootScene, MainMenuScene, GameScene]
 };
 
 new Phaser.Game(config);
