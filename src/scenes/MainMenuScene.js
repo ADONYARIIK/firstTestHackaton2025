@@ -5,7 +5,7 @@ export default class MainMenuScene extends Phaser.Scene {
         super('MainMenuScene')
     }
     create() {
-        const bg = this.add.image(0, 0, 'bg').setOrigin(0, 0);
+        const bg = this.add.image(0, 0, 'game', 'background.png').setOrigin(0, 0);
 
         const fullScreen = this.add.image(1490, 0, 'fullScreen').setOrigin(0, 0).setScale(0.05).setTintFill(0xffffff);
 
