@@ -6,7 +6,7 @@ export default class BootScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('logo', '../src/assets/logo.png')
+        this.load.image('logo', './src/assets/logo.png')
     }
 
     create() {
@@ -23,8 +23,8 @@ export default class BootScene extends Phaser.Scene {
     }
 
     loadAssets() {
-        this.load.image('bg', '../src/assets/sprites/Background.png');
-        this.load.image('fullScreen', '../src/assets/sprites/fullScreen.svg');
+        this.load.image('bg', './src/assets/sprites/Background.png');
+        this.load.image('fullScreen', './src/assets/sprites/fullScreen.svg');
         this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
     }
 }
