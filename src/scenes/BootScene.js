@@ -11,7 +11,7 @@ export default class BootScene extends Phaser.Scene {
 
     create() {
         const { width, height } = this.scale;
-        const logo = thiss.add.image(width / 2, height / 2, 'logo');
+        const logo = this.add.image(width / 2, height / 2, 'logo');
         logo.setScale(0.5);
 
         this.load.start();
@@ -22,6 +22,6 @@ export default class BootScene extends Phaser.Scene {
     }
 
     loadAssets() {
-
+        this.load.image('bg', '../src/assets/sprites/Background.png');
     }
 }
