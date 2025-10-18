@@ -77,10 +77,13 @@ export default class MainMenuScene extends Phaser.Scene {
         this.input.style.position = "relative";   
         this.input.style.bottom = "48.7em";
         this.input.style.left = "85%";
+        this.input.style.position = "absolute";
+        this.input.style.top = "16%";
+        this.input.style.right = "11%";
         this.input.min = "0";
         this.input.max = "100";
         this.input.value = '0';
-        this.input.step= "10"
+        this.input.step = "10"
         this.input.style.width = "100px";
         this.input.style.fontSize = "18px";
         this.input.style.padding = "5px";
