@@ -4,28 +4,13 @@ export default class MainMenuScene extends Phaser.Scene {
     constructor() {
         super('MainMenuScene')
     }
-    preload() {
-        this.load.image('bg', '../src/assets/sprites/Background.png');
-        this.load.image('fullScreen', '../src/assets/sprites/fullScreen.svg');
-        this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
-    }
     create() {
         const bg = this.add.image(0, 0, 'bg').setOrigin(0, 0);
         const fullScreen = this.add.image(1490, 0, 'fullScreen').setOrigin(0, 0).setScale(0.05).setTintFill(0xffffff);
-       
-        // this.add.text(400, 200, 'Hackaton Game', {
-        //     fontSize: '28px',
-        //     color: '#00ff88'
-        // }).setOrigin(0.5);
-
-        // const playButton = this.add.text(600, 200, '▶ Играть', {
-        //     fontSize: '28px',
-        //     color: '#00ff88'
-        // }).setOrigin(0.5).setInteractive();
-
-        // playButton.on('pointerdown', () => {
-        //     this.scene.start('GameScene');
-        // })
+        this.settingsContaner = this.add.container(1200,100).setVisible(false);
+        let settingsBackground = this.add.rectangle(0, 0, 300, 300, 0x000000, 0.8).setOrigin(0);
+        this.settingsContaner.add(settingsBackground);
+        this.closeBtn = this.add.text(1480,100,'X', {fontSize: '32px', fill: '#fff'}).setInteractive({useHandCursor: true}).setVisible(false);
         WebFont.load({
             google: {
                 families: ['Outfit']
@@ -46,19 +31,16 @@ export default class MainMenuScene extends Phaser.Scene {
                     fontSize: '32px',
                     color: '#fff'
                 }).setInteractive({useHandCursor: true});
-                this.settings.on('pointerdown')
+                this.settings.on('pointerdown', ()=>{
+                    this.settingsContaner.setVisible(true);
+                    this.closeBtn.setVisible(true);
+                })
             }
         });
-        
-        
-        // fullScreen.setInteractive({useHandCursor: true});
-        // fullScreen.on('pointerdown', ()=>{
-        //     if(!this.scale.fullscreen){
-        //         this.scale.startFullscreen();
-        //     }
-        //     else{
-        //         this.scale.stopFullscreen();
-        //     }
-        // })
+
+        this.closeBtn.on('pointerdown', ()=>{
+            this.settingsContaner.setVisible(false);
+            this.closeBtn.setVisible(false);
+        });
     }
 }
