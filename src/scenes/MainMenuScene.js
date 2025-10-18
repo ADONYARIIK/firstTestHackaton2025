@@ -62,13 +62,31 @@ export default class MainMenuScene extends Phaser.Scene {
                     this.closeBtn.setVisible(false);
                 });
 
-                this.startBtn.setInteractive({useHandCursor: true});
+                this.startBtn.setInteractive({ useHandCursor: true });
                 this.startBtn.on('pointerdown', () => {
                     this.scene.start('GameScene');
                 });
 
+                this.soundText = this.add.text(10, 50, 'Sound', { fontFamily: 'Outfit', fontSize: '32px', fill: '#fff' });
+                this.settingsContaner.add(this.soundText);
             }
         });
+
+        this.input = document.createElement("input");
+        this.input.type = "number";
+        this.input.style.position = "relative";
+        this.input.style.bottom = "345px";
+        this.input.style.right = "220px";
+        this.input.min = "0";
+        this.input.max = "100";
+        this.input.value = '0';
+        this.input.step= "10"
+        this.input.style.width = "100px";
+        this.input.style.fontSize = "18px";
+        this.input.style.padding = "5px";
+        this.input.style.borderRadius = "6px";
+        document.body.appendChild(this.input);
+        this.input.style.display = 'none';
 
     }
 
@@ -76,6 +94,9 @@ export default class MainMenuScene extends Phaser.Scene {
         setTimeout(() => {
             this.closeBtn.setVisible(true);
         }, '150');
+        setTimeout(() => {
+            this.input.style.display = 'block';
+        }, '200');
         this.settingsContaner.setVisible(true);
         this.tweens.add({
             targets: this.settingsContaner,
@@ -94,6 +115,7 @@ export default class MainMenuScene extends Phaser.Scene {
             ease: 'Back.In',
             onComplete: () => {
                 this.settingsContaner.setVisible(false);
+                this.input.style.display = 'none';
             }
         });
     }
