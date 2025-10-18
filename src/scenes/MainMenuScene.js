@@ -13,13 +13,62 @@ export default class MainMenuScene extends Phaser.Scene {
 
 
 
-
         this.gfx = this.add.graphics();
         this.gfx.fillStyle(0x000000, 0.8);
         this.gfx.lineStyle(3, 0x0000f1, 0.4);
         this.gfx.fillRoundedRect(0, 0, 300, 300, 20);
         this.gfx.strokeRoundedRect(0, 0, 300, 300, 20);
         this.settingsContainer.add(this.gfx);
+
+
+
+
+        // Плюс-кнопка
+        // Начальное значение
+        let volumeValue = 0;
+
+        // Плюс-кнопка
+        this.plusVolume = this.add.graphics();
+        this.plusVolume.fillStyle(0xffffff, 1);
+        this.plusVolume.lineStyle(3, 0x0000f1, 0.4);
+        this.plusVolume.fillRoundedRect(0, 0, 50, 20, 10);
+        this.plusVolume.setInteractive(new Phaser.Geom.Rectangle(0, 0, 50, 20), Phaser.Geom.Rectangle.Contains);
+        this.settingsContainer.add(this.plusVolume);
+        this.plusVolume.x = 120;
+        this.plusVolume.y = 60;
+
+        // Минус-кнопка
+        this.minusVolume = this.add.graphics();
+        this.minusVolume.fillStyle(0xffffff, 1);
+        this.minusVolume.lineStyle(3, 0x0000f1, 0.4);
+        this.minusVolume.fillRoundedRect(0, 0, 50, 20, 10);
+        this.minusVolume.setInteractive(new Phaser.Geom.Rectangle(0, 0, 50, 20), Phaser.Geom.Rectangle.Contains);
+        this.settingsContainer.add(this.minusVolume);
+        this.minusVolume.x = 180;
+        this.minusVolume.y = 60;
+
+        // Текст для отображения значения
+        this.volumeText = this.add.text(250, 60, `${volumeValue}%`, { fontSize: '20px', color: '#fff' });
+        this.settingsContainer.add(this.volumeText);
+       
+        // Обновление курсора и значения при клике
+        this.plusVolume.on('pointerdown', () => {
+            volumeValue += 10;
+            if (volumeValue > 100) volumeValue = 100; // ограничение
+            this.volumeText.setText(`${volumeValue}%`);
+        });
+
+        this.minusVolume.on('pointerdown', () => {
+            volumeValue -= 10;
+            if (volumeValue < 0) volumeValue = 0; // ограничение
+            this.volumeText.setText(`${volumeValue}%`);
+        });
+
+        // Только для курсора-руки при наведении
+        this.plusVolume.on('pointerover', () => this.input.setDefaultCursor('pointer'));
+        this.plusVolume.on('pointerout', () => this.input.setDefaultCursor('default'));
+        this.minusVolume.on('pointerover', () => this.input.setDefaultCursor('pointer'));
+        this.minusVolume.on('pointerout', () => this.input.setDefaultCursor('default'));
 
 
 
@@ -67,40 +116,16 @@ export default class MainMenuScene extends Phaser.Scene {
                     this.scene.start('GameScene');
                 });
 
-                this.soundText = this.add.text(10, 50, 'Sound', { fontFamily: 'Outfit', fontSize: '32px', fill: '#fff' });
+                this.soundText = this.add.text(10, 50, 'Volume', { fontFamily: 'Outfit', fontSize: '32px', fill: '#fff' });
                 this.settingsContainer.add(this.soundText);
             }
         });
-        this.container = document.getElementById('game-container');
-        this.input = document.createElement("input");
-        this.input.type = "number";
-        this.input.style.position = "relative";   
-        this.input.style.bottom = "48.7em";
-        this.input.style.left = "85%";
-        this.input.style.position = "absolute";
-        this.input.style.top = "16%";
-        this.input.style.right = "11%";
-        this.input.min = "0";
-        this.input.max = "100";
-        this.input.value = '0';
-        this.input.step = "10"
-        this.input.style.width = "100px";
-        this.input.style.height = "20px";
-        this.input.style.fontSize = "18px";
-        this.input.style.padding = "5px";
-        this.input.style.borderRadius = "6px";
-        this.container.appendChild(this.input);
-        this.input.style.display = 'none';
-
     }
 
     showSettings() {
         setTimeout(() => {
             this.closeBtn.setVisible(true);
         }, '150');
-        setTimeout(() => {
-            this.input.style.display = 'block';
-        }, '250');
         this.settingsContainer.setVisible(true);
         this.tweens.add({
             targets: this.settingsContainer,
@@ -119,7 +144,6 @@ export default class MainMenuScene extends Phaser.Scene {
             ease: 'Back.In',
             onComplete: () => {
                 this.settingsContainer.setVisible(false);
-                this.input.style.display = 'none';
             }
         });
     }
