@@ -6,6 +6,10 @@ export default class GameScene extends Phaser.Scene{
     }
 
     create(){
-        
+        const background = this.add.image(0,0,'game','bg_castle.png').setOrigin(0,0);
+        background.setScale(6);
+
+        const player = this.matter.add.sprite(400,300,'game','p3_front.png');
+        const platrorm = this.matter.add.sprite('game','castleMid.png',{isStatic:true});
     }
 }
