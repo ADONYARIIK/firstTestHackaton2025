@@ -9,7 +9,7 @@ export default class MainMenuScene extends Phaser.Scene {
 
         const fullScreen = this.add.image(1490, 0, 'fullScreen').setOrigin(0, 0).setScale(0.05).setTintFill(0xffffff);
 
-        this.settingsContaner = this.add.container(1200, 100).setVisible(false);
+        this.settingsContainer = this.add.container(1200, 100).setVisible(false);
 
 
 
@@ -19,7 +19,7 @@ export default class MainMenuScene extends Phaser.Scene {
         this.gfx.lineStyle(3, 0x0000f1, 0.4);
         this.gfx.fillRoundedRect(0, 0, 300, 300, 20);
         this.gfx.strokeRoundedRect(0, 0, 300, 300, 20);
-        this.settingsContaner.add(this.gfx);
+        this.settingsContainer.add(this.gfx);
 
 
 
@@ -55,8 +55,8 @@ export default class MainMenuScene extends Phaser.Scene {
 
                 this.closeBtn = this.add.text(260, 10, 'X', { fontFamily: 'Outfit', fontSize: '32px', fill: '#fff' }).setInteractive({ useHandCursor: true }).setVisible(false);
 
-                this.settingsContaner.add(this.closeBtn);
-                this.settingsContaner.add(this.language);
+                this.settingsContainer.add(this.closeBtn);
+                this.settingsContainer.add(this.language);
                 this.closeBtn.on('pointerdown', () => {
                     this.hideSettings();
                     this.closeBtn.setVisible(false);
@@ -68,10 +68,10 @@ export default class MainMenuScene extends Phaser.Scene {
                 });
 
                 this.soundText = this.add.text(10, 50, 'Sound', { fontFamily: 'Outfit', fontSize: '32px', fill: '#fff' });
-                this.settingsContaner.add(this.soundText);
+                this.settingsContainer.add(this.soundText);
             }
         });
-        this.contaner = document.getElementById('game-container');
+        this.container = document.getElementById('game-container');
         this.input = document.createElement("input");
         this.input.type = "number";
         this.input.style.position = "relative";   
@@ -85,10 +85,11 @@ export default class MainMenuScene extends Phaser.Scene {
         this.input.value = '0';
         this.input.step = "10"
         this.input.style.width = "100px";
+        this.input.style.height = "20px";
         this.input.style.fontSize = "18px";
         this.input.style.padding = "5px";
         this.input.style.borderRadius = "6px";
-        this.contaner.appendChild(this.input);
+        this.container.appendChild(this.input);
         this.input.style.display = 'none';
 
     }
@@ -100,9 +101,9 @@ export default class MainMenuScene extends Phaser.Scene {
         setTimeout(() => {
             this.input.style.display = 'block';
         }, '250');
-        this.settingsContaner.setVisible(true);
+        this.settingsContainer.setVisible(true);
         this.tweens.add({
-            targets: this.settingsContaner,
+            targets: this.settingsContainer,
             alpha: 1,
             scale: 1,
             duration: 300,
@@ -111,13 +112,13 @@ export default class MainMenuScene extends Phaser.Scene {
     }
     hideSettings() {
         this.tweens.add({
-            targets: this.settingsContaner,
+            targets: this.settingsContainer,
             alpha: 0,
             scale: 0,
             duration: 200,
             ease: 'Back.In',
             onComplete: () => {
-                this.settingsContaner.setVisible(false);
+                this.settingsContainer.setVisible(false);
                 this.input.style.display = 'none';
             }
         });
