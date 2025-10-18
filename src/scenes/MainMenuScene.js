@@ -71,12 +71,12 @@ export default class MainMenuScene extends Phaser.Scene {
                 this.settingsContaner.add(this.soundText);
             }
         });
-
+        this.contaner = document.getElementById('game-container');
         this.input = document.createElement("input");
         this.input.type = "number";
-        this.input.style.position = "relative";
-        this.input.style.bottom = "345px";
-        this.input.style.right = "220px";
+        this.input.style.position = "relative";   
+        this.input.style.bottom = "48.7em";
+        this.input.style.left = "85%";
         this.input.min = "0";
         this.input.max = "100";
         this.input.value = '0';
@@ -85,7 +85,7 @@ export default class MainMenuScene extends Phaser.Scene {
         this.input.style.fontSize = "18px";
         this.input.style.padding = "5px";
         this.input.style.borderRadius = "6px";
-        document.body.appendChild(this.input);
+        this.contaner.appendChild(this.input);
         this.input.style.display = 'none';
 
     }
@@ -96,7 +96,7 @@ export default class MainMenuScene extends Phaser.Scene {
         }, '150');
         setTimeout(() => {
             this.input.style.display = 'block';
-        }, '200');
+        }, '250');
         this.settingsContaner.setVisible(true);
         this.tweens.add({
             targets: this.settingsContaner,
