@@ -8,12 +8,19 @@ export default class MainMenuScene extends Phaser.Scene {
         const bg = this.add.image(0, 0, 'bg').setOrigin(0, 0);
         const fullScreen = this.add.image(1490, 0, 'fullScreen').setOrigin(0, 0).setScale(0.05).setTintFill(0xffffff);
         this.settingsContaner = this.add.container(1200, 100).setVisible(false);
-        let settingsBackground = this.add.rectangle(0, 0, 300, 300, 0x000000, 0.8).setOrigin(0);
-        this.settingsContaner.add(settingsBackground);
-        this.closeBtn = this.add.text(1480, 100, 'X', { fontSize: '32px', fill: '#fff' }).setInteractive({ useHandCursor: true }).setVisible(false);
         
-
-
+        this.closeBtn = this.add.text(260, 10, 'X', { fontSize: '32px', fill: '#fff' }).setInteractive({ useHandCursor: true }).setVisible(false);
+         this.closeBtn.on('pointerdown', () => {
+            this.hideSettings();
+            this.closeBtn.setVisible(false);
+        });
+        this.gfx = this.add.graphics();
+        this.gfx.fillStyle(0x000000, 0.8);
+        this.gfx.lineStyle(3, 0xffffff, 0.4);
+        this.gfx.fillRoundedRect(0, 0, 300, 300, 20);
+        this.gfx.strokeRoundedRect(0, 0, 300, 300, 20);
+        this.settingsContaner.add(this.gfx);
+         this.settingsContaner.add(this.closeBtn);
 
 
 
@@ -43,14 +50,12 @@ export default class MainMenuScene extends Phaser.Scene {
             }
         });
 
-        this.closeBtn.on('pointerdown', () => {
-            this.hideSettings();
-            this.closeBtn.setVisible(false);
-        });
     }
 
     showSettings() {
-        this.closeBtn.setVisible(true);
+        setTimeout(()=>{
+            this.closeBtn.setVisible(true);
+        }, '150');
         this.settingsContaner.setVisible(true);
         this.tweens.add({
             targets: this.settingsContaner,
@@ -67,7 +72,7 @@ export default class MainMenuScene extends Phaser.Scene {
             scale: 0,
             duration: 200,
             ease: 'Back.In',
-             onComplete: () => {
+            onComplete: () => {
                 this.settingsContaner.setVisible(false);
             }
         });
