@@ -50,7 +50,7 @@ export default class MainMenuScene extends Phaser.Scene {
         // Текст для отображения значения
         this.volumeText = this.add.text(250, 60, `${volumeValue}%`, { fontSize: '20px', color: '#fff' });
         this.settingsContainer.add(this.volumeText);
-       
+
         // Обновление курсора и значения при клике
         this.plusVolume.on('pointerdown', () => {
             volumeValue += 10;
