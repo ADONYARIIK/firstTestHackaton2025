@@ -1,0 +1,628 @@
+{
+	"textures": [
+		{
+			"image": "texture",
+			"format": "RGBA8888",
+			"size": {
+				"w": 397,
+				"h": 422
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "cloud2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 129,
+						"h": 71
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 129,
+						"h": 71
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 129,
+						"h": 71
+					}
+				},
+				{
+					"filename": "cloud3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 129,
+						"h": 71
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 129,
+						"h": 71
+					},
+					"frame": {
+						"x": 0,
+						"y": 71,
+						"w": 129,
+						"h": 71
+					}
+				},
+				{
+					"filename": "cloud1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 71
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 71
+					},
+					"frame": {
+						"x": 129,
+						"y": 0,
+						"w": 128,
+						"h": 71
+					}
+				},
+				{
+					"filename": "flagRed2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 129,
+						"y": 71,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "bush.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 142,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "dirtCaveRockLarge.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 142,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "dirtCaveRockSmall.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 141,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagBlue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 212,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagBlue2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 212,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagBlueHanging.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 211,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagGreen.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 199,
+						"y": 71,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagGreen2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 257,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagGreenHanging.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 141,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagRed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 211,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "cactus.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 282,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagRedHanging.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 282,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagYellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 281,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagYellow2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 281,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagYellowHanging.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 327,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "mushroomBrown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 269,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "mushroomRed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "rock.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "plantPurple.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "plant.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 352,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "snowhill.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 352,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "particleBrick2b.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 21
+					},
+					"frame": {
+						"x": 350,
+						"y": 70,
+						"w": 21,
+						"h": 21
+					}
+				},
+				{
+					"filename": "particleBrick1b.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 21
+					},
+					"frame": {
+						"x": 371,
+						"y": 70,
+						"w": 21,
+						"h": 21
+					}
+				},
+				{
+					"filename": "particleBrick2a.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 14
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 14
+					},
+					"frame": {
+						"x": 350,
+						"y": 91,
+						"w": 19,
+						"h": 14
+					}
+				},
+				{
+					"filename": "particleBrick1a.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 14
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 14
+					},
+					"frame": {
+						"x": 369,
+						"y": 91,
+						"w": 19,
+						"h": 14
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7"
+	}
+}
