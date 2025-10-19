@@ -20,11 +20,14 @@ export default class GameScene extends Phaser.Scene {
 
         // this.lights.addLight(400, 200, 250, 0xffaa66, 2.0);
 
-        const background = this.add.image(0, 0, 'game', 'bg_castle.png').setOrigin(0, 0);
-        background.setScale(6);
 
-        const player = this.matter.add.sprite(400, 300, 'game', 'p3_front.png');
-        const platrorm = this.matter.add.sprite(0, 1024, 'game', 'castleMid.png', { isStatic: true });
+
+        
+        // const background = this.add.image(0, 0, 'game', 'bg_castle.png').setOrigin(0, 0);
+        // background.setScale(6);
+
+        // const player = this.matter.add.sprite(400, 300, 'game', 'p3_front.png');
+        // const platrorm = this.matter.add.sprite(0, 1024, 'game', 'castleMid.png', { isStatic: true });
     }
 
     // createSpriteWithPhysics(name, x, y) {
