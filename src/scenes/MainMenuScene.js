@@ -6,10 +6,14 @@ export default class MainMenuScene extends Phaser.Scene {
     }
     create() {
         const bg = this.add.image(0, 0, 'game', 'background.png').setOrigin(0, 0);
-        this.startBtn = this.add.image(270, 520, 'start').setScale(0.15).setInteractive({ useHandCursor: true });
+        this.startBtn = this.add.image(270, 520, 'start').setScale(0.15).setInteractive({ useHandCursor: true }); //создание startBtn
+
+        //начало новой сцены
         this.startBtn.on('pointerdown', () => {
             this.scene.start('GameScene');
         });
+
+        //анимация увеличения
         this.startBtn.on('pointerover', () => {
             this.tweens.add({
                 targets: this.startBtn,
@@ -19,7 +23,7 @@ export default class MainMenuScene extends Phaser.Scene {
             });
         });
 
-        // Уход курсора
+        // окончание анимации увеличения
         this.startBtn.on('pointerout', () => {
             this.tweens.add({
                 targets: this.startBtn,
@@ -28,18 +32,23 @@ export default class MainMenuScene extends Phaser.Scene {
                 ease: 'Power2'
             });
         });
-        this.gameName = this.add.image(800, 130, 'gameName').setScale(0.4)
-        this.settingsIcon = this.add.image(1500, 30, 'settingsIcon').setScale(0.09).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
+        this.gameName = this.add.image(800, 130, 'gameName').setScale(0.4) //создание gameName
+        this.settingsIcon = this.add.image(1500, 30, 'settingsIcon').setScale(0.09).setTintFill(0xffffff).setInteractive({ useHandCursor: true }); //создание settingsIcon
+
+        //открытие окна настроек
         this.settingsIcon.on('pointerdown', () => {
             this.showSettings();
         });
+        //анимация прокрута настроек
         this.settingsIcon.on('pointerover', () => {
             this.rotateSettingIcon();
         });
-        this.settingsContainer = this.add.container(1200, 100).setVisible(false);
 
 
-        this.gfx = this.add.graphics();
+        this.settingsContainer = this.add.container(1200, 100).setVisible(false); //создание settingsContainer
+
+        //создание контейнера настроек (видимый)
+        this.gfx = this.add.graphics();  
         this.gfx.fillStyle(0x000000, 0.8);
         this.gfx.lineStyle(3, 0x0000f1, 0.4);
         this.gfx.fillRoundedRect(0, 0, 300, 300, 20);
@@ -103,7 +112,7 @@ export default class MainMenuScene extends Phaser.Scene {
         this.settingsContainer.add(this.minusSFXBtn);
 
 
-
+        
         this.sfxText = this.add.text(250, 100, `${sfxValue}%`, { fontSize: '20px', color: '#fff' });
         this.settingsContainer.add(this.sfxText);
 
