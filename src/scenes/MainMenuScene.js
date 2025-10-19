@@ -7,8 +7,14 @@ export default class MainMenuScene extends Phaser.Scene {
     create() {
         const bg = this.add.image(0, 0, 'game', 'background.png').setOrigin(0, 0);
 
-        const fullScreen = this.add.image(1490, 0, 'fullScreen').setOrigin(0, 0).setScale(0.05).setTintFill(0xffffff);
 
+        this.settingsIcon = this.add.image(1500, 30, 'settingsIcon').setScale(0.09).setTintFill(0xffffff).setInteractive({useHandCursor: true});
+        this.settingsIcon.on('pointerdown', () => {
+            this.showSettings();
+        });
+        this.settingsIcon.on('pointerover', () => {
+            this.rotateSettingIcon();
+        });
         this.settingsContainer = this.add.container(1200, 100).setVisible(false);
 
 
@@ -25,50 +31,96 @@ export default class MainMenuScene extends Phaser.Scene {
 
         // Плюс-кнопка
         // Начальное значение
-        let volumeValue = 0;
+        let musicValue = 0;
 
         // Плюс-кнопка
-        this.plusVolume = this.add.graphics();
-        this.plusVolume.fillStyle(0xffffff, 1);
-        this.plusVolume.lineStyle(3, 0x0000f1, 0.4);
-        this.plusVolume.fillRoundedRect(0, 0, 50, 20, 10);
-        this.plusVolume.setInteractive(new Phaser.Geom.Rectangle(0, 0, 50, 20), Phaser.Geom.Rectangle.Contains);
-        this.settingsContainer.add(this.plusVolume);
-        this.plusVolume.x = 120;
-        this.plusVolume.y = 60;
+        this.plusMusicVolume = this.add.graphics();
+        this.plusMusicVolume.fillStyle(0xffffff, 1);
+        this.plusMusicVolume.lineStyle(3, 0x0000f1, 0.4);
+        this.plusMusicVolume.fillRoundedRect(0, 0, 50, 20, 10);
+        this.plusMusicVolume.setInteractive(new Phaser.Geom.Rectangle(0, 0, 50, 20), Phaser.Geom.Rectangle.Contains);
+        this.settingsContainer.add(this.plusMusicVolume);
+        this.plusMusicVolume.x = 180;
+        this.plusMusicVolume.y = 60;
 
         // Минус-кнопка
-        this.minusVolume = this.add.graphics();
-        this.minusVolume.fillStyle(0xffffff, 1);
-        this.minusVolume.lineStyle(3, 0x0000f1, 0.4);
-        this.minusVolume.fillRoundedRect(0, 0, 50, 20, 10);
-        this.minusVolume.setInteractive(new Phaser.Geom.Rectangle(0, 0, 50, 20), Phaser.Geom.Rectangle.Contains);
-        this.settingsContainer.add(this.minusVolume);
-        this.minusVolume.x = 180;
-        this.minusVolume.y = 60;
+        this.minusMusicVolume = this.add.graphics();
+        this.minusMusicVolume.fillStyle(0xffffff, 1);
+        this.minusMusicVolume.lineStyle(3, 0x0000f1, 0.4);
+        this.minusMusicVolume.fillRoundedRect(0, 0, 50, 20, 10);
+        this.minusMusicVolume.setInteractive(new Phaser.Geom.Rectangle(0, 0, 50, 20), Phaser.Geom.Rectangle.Contains);
+        this.settingsContainer.add(this.minusMusicVolume);
+        this.minusMusicVolume.x = 120;
+        this.minusMusicVolume.y = 60;
+
 
         // Текст для отображения значения
-        this.volumeText = this.add.text(250, 60, `${volumeValue}%`, { fontSize: '20px', color: '#fff' });
-        this.settingsContainer.add(this.volumeText);
+        this.musicText = this.add.text(250, 60, `${musicValue}%`, { fontSize: '20px', color: '#fff' });
+        this.settingsContainer.add(this.musicText);
 
-        // Обновление курсора и значения при клике
-        this.plusVolume.on('pointerdown', () => {
-            volumeValue += 10;
-            if (volumeValue > 100) volumeValue = 100; // ограничение
-            this.volumeText.setText(`${volumeValue}%`);
+        this.plusMusicVolume.on('pointerdown', () => {
+            musicValue += 10;
+            if (musicValue > 100) musicValue = 100; // ограничение
+            this.musicText.setText(`${musicValue}%`);
         });
 
-        this.minusVolume.on('pointerdown', () => {
-            volumeValue -= 10;
-            if (volumeValue < 0) volumeValue = 0; // ограничение
-            this.volumeText.setText(`${volumeValue}%`);
+        this.minusMusicVolume.on('pointerdown', () => {
+            musicValue -= 10;
+            if (musicValue < 0) musicValue = 0; // ограничение
+            this.musicText.setText(`${musicValue}%`);
         });
 
-        // Только для курсора-руки при наведении
-        this.plusVolume.on('pointerover', () => this.input.setDefaultCursor('pointer'));
-        this.plusVolume.on('pointerout', () => this.input.setDefaultCursor('default'));
-        this.minusVolume.on('pointerover', () => this.input.setDefaultCursor('pointer'));
-        this.minusVolume.on('pointerout', () => this.input.setDefaultCursor('default'));
+
+        let sfxValue = 0;
+
+        // Плюс-кнопка SFX
+        this.plusSfxVolume = this.add.graphics();
+        this.plusSfxVolume.fillStyle(0xffffff, 1);
+        this.plusSfxVolume.lineStyle(3, 0x0000f1, 0.4);
+        this.plusSfxVolume.fillRoundedRect(0, 0, 50, 20, 10);
+        this.plusSfxVolume.setInteractive(new Phaser.Geom.Rectangle(0, 0, 50, 20), Phaser.Geom.Rectangle.Contains);
+        this.settingsContainer.add(this.plusSfxVolume);
+        this.plusSfxVolume.x = 180;
+        this.plusSfxVolume.y = 100;
+
+        // Минус-кнопка SFX
+        this.minusSfxVolume = this.add.graphics();
+        this.minusSfxVolume.fillStyle(0xffffff, 1);
+        this.minusSfxVolume.lineStyle(3, 0x0000f1, 0.4);
+        this.minusSfxVolume.fillRoundedRect(0, 0, 50, 20, 10);
+        this.minusSfxVolume.setInteractive(new Phaser.Geom.Rectangle(0, 0, 50, 20), Phaser.Geom.Rectangle.Contains);
+        this.settingsContainer.add(this.minusSfxVolume);
+        this.minusSfxVolume.x = 120;
+        this.minusSfxVolume.y = 100;
+
+        
+        this.sfxText = this.add.text(250, 100, `${sfxValue}%`, { fontSize: '20px', color: '#fff' });
+        this.settingsContainer.add(this.sfxText);
+
+       
+        this.plusSfxVolume.on('pointerdown', () => {
+            sfxValue += 10;
+            if (sfxValue > 100) sfxValue = 100; // ограничение
+            this.sfxText.setText(`${sfxValue}%`);
+        });
+
+        this.minusSfxVolume.on('pointerdown', () => {
+            sfxValue -= 10;
+            if (sfxValue < 0) sfxValue = 0; // ограничение
+            this.sfxText.setText(`${sfxValue}%`);
+        });
+
+
+        this.plusMusicVolume.on('pointerover', () => this.input.setDefaultCursor('pointer'));
+        this.plusMusicVolume.on('pointerout', () => this.input.setDefaultCursor('default'));
+        this.minusMusicVolume.on('pointerover', () => this.input.setDefaultCursor('pointer'));
+        this.minusMusicVolume.on('pointerout', () => this.input.setDefaultCursor('default'));
+
+
+        this.plusSfxVolume.on('pointerover', () => this.input.setDefaultCursor('pointer'));
+        this.plusSfxVolume.on('pointerout', () => this.input.setDefaultCursor('default'));
+        this.minusSfxVolume.on('pointerover', () => this.input.setDefaultCursor('pointer'));
+        this.minusSfxVolume.on('pointerout', () => this.input.setDefaultCursor('default'));
 
 
 
@@ -90,15 +142,6 @@ export default class MainMenuScene extends Phaser.Scene {
                     color: '#ffffffff'
                 }).setScale(1);
 
-                this.settings = this.add.text(1330, 0, 'SETTINGS', {
-                    fontFamily: 'Outfit',
-                    fontSize: '32px',
-                    color: '#fff'
-                }).setInteractive({ useHandCursor: true });
-                this.settings.on('pointerdown', () => {
-                    this.showSettings();
-                })
-
 
                 this.language = this.add.text(10, 10, 'Language', { fontFamily: 'Outfit', fontSize: '32px', fill: '#fff' });
 
@@ -116,10 +159,22 @@ export default class MainMenuScene extends Phaser.Scene {
                     this.scene.start('GameScene');
                 });
 
-                this.soundText = this.add.text(10, 50, 'Volume', { fontFamily: 'Outfit', fontSize: '32px', fill: '#fff' });
+                this.soundText = this.add.text(10, 50, 'Music', { fontFamily: 'Outfit', fontSize: '32px', fill: '#fff' });
+                this.settingsContainer.add(this.soundText);
+
+                this.soundText = this.add.text(10, 90, 'SFX', { fontFamily: 'Outfit', fontSize: '32px', fill: '#fff' });
                 this.settingsContainer.add(this.soundText);
             }
         });
+    }
+
+
+    rotateSettingIcon(){
+        this.tweens.add({
+            targets: this.settingsIcon,
+            angle: 360,
+            duration: 1000
+        })
     }
 
     showSettings() {
