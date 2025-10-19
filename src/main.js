@@ -5,9 +5,8 @@ import GameScene from './scenes/GameScene';
 
 const config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    backgroundColor: '#9e2424',
+    width: 1536,
+    height: 1024,
     parent: 'game-container',
     physics: {
         default: 'matter',
@@ -16,7 +15,7 @@ const config = {
             debug: true
         }
     },
-    scene: [BootScene, MainMenuScene, GameScene]
+    scene: [ BootScene,MainMenuScene, GameScene]
 };
 
-new Phaser.Game(config);
+const game = new Phaser.Game(config);
