@@ -23,8 +23,8 @@ export default class BootScene extends Phaser.Scene {
     }
 
     loadAssets() {
+        this.load.image('settingsIcon', './src/assets/newSprites/settingsIcon.png');
         this.load.atlas('game', './src/assets/atlas/spritesheet.png', './src/assets/atlas/spritesheet.json');
-        this.load.image('fullScreen', './src/assets/sprites/fullScreen.svg');
         this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
     }
 }
