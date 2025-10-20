@@ -6,11 +6,11 @@ export default class GameScene extends Phaser.Scene {
     }
 
     create() {
-        // // Привязываем normal map к атласу
-        // this.textures.get("sprites").setNormalMap("sprites_n");
         // Освещение
         // this.lights.enable();
         // this.lights.setAmbientColor(0x555555);
+        // // Привязываем normal map к атласу
+        // this.textures.get("sprites").setNormalMap("sprites_n");
 
         // // Пример источника света
         // this.lights.addLight(400, 300, 250).setColor(0xffddaa).setIntensity(2.0);
@@ -52,27 +52,91 @@ export default class GameScene extends Phaser.Scene {
         // const platrorm = this.matter.add.sprite(0, 1024, 'game', 'castleMid.png', { isStatic: true });
     }
 
-    // createSpriteWithPhysics(name, x, y) {
-    //     const shapes = this.cache.json.get("shapes");
-    //     const shapeData = shapes[name];
+    createSprite(x, y, atlas, name) {
+        const sprite = this.add.sprite(x, y, atlas, `${name}.png`);
 
-    //     const options = { label: name };
+        return sprite;
+    }
 
-    //     // Если есть полигоны — создаём из них Matter body
-    //     if (shapeData && shapeData.fixtures?.length > 0) {
-    //         const fixture = shapeData.fixtures[0];
-    //         if (fixture.shapeType === "POLYGON") {
-    //             const verts = fixture.vertices.map(([vx, vy]) => ({ x: vx, y: vy }));
-    //             options.shape = { type: "fromVerts", verts };
-    //         }
-    //         if (fixture.shapeType === "CIRCLE") {
-    //             options.circleRadius = fixture.radius;
-    //         }
-    //     }
+    createNormalMapSprite(x, y, atlas, name) {
+        const sprite = this.add.sprite(x, y, atlas, `${name}.png`);
+        const normalFrame = this.textures.getFrame(`${atlas}_n`, `${name}_n.png`);
+        sprite.setPipeline('Light2D');
 
-    //     const sprite = this.matter.add.sprite(x, y, "sprites", `${name}.png`, options);
-    //     sprite.setPipeline("Light2D");
-    //     return sprite;
-    // }
+        if (normalFrame) {
+            sprite.setNormalMap(normalFrame);
+        } else {
+            console.warn(`⚠️ Normal map not found for ${name}_n.png`);
+        }
+
+        return sprite;
+    }
+
+    createPhysicsSprite(x, y, atlas, name) {
+        //Загружаем данные форм из кэша
+        const shapes = this.cache.json.get("shapes");
+        const shapeData = shapes ? shapes[name] : null;
+
+        const options = { label: name };
+
+        //Создание коллайдера
+        if (shapeData && shapeData.fixtures?.length > 0) {
+            const fixture = shapeData.fixtures[0];
+
+            if (fixture.shapeType === "POLYGON" || fixture.shapeType === "MAGIC") {
+                const verts = fixture.vertices.map(([vx, vy]) => ({ x: vx, y: vy }));
+                options.shape = { type: "fromVerts", verts };
+            }
+            else if (fixture.shapeType === "CIRCLE") {
+                options.circleRadius = fixture.radius || fixture.vertices?.[0]?.[0] || 10;
+            }
+        }
+
+        //Создаём физический спрайт
+        const sprite = this.matter.add.sprite(x, y, atlas, `${name}.png`, options);
+
+        //Возврат готового спрайта
+        return sprite;
+    }
+
+    createNormalMapPhysicsSprite(x, y, atlas, name) {
+        //Загружаем данные форм из кэша
+        const shapesData = this.cache.json.get("shapes");
+        const shapeData = shapesData?.shapes?.[name];
+
+        const options = { label: name };
+
+        //Создание коллайдера
+        if (shapeData && shapeData.fixtures?.length > 0) {
+            const fixture = shapeData.fixtures[0];
+
+            if (fixture.shapeType === "POLYGON" || fixture.shapeType === "MAGIC") {
+                //Собираем все полигоны (каждый из которых массив точек)
+                const verts = fixture.vertices.map(polygon =>
+                    polygon.map(v => ({ x: v.x, y: v.y }))
+                );
+
+                //В Phaser Matter используется fromVerts для сложных форм
+                options.shape = { type: "fromVerts", verts };
+            }
+            else if (fixture.shapeType === "CIRCLE") {
+                options.circleRadius = fixture.radius || fixture.vertices?.[0]?.[0] || 10;
+            }
+        }
+
+        //Создаём физический спрайт
+        const sprite = this.matter.add.sprite(x, y, atlas, `${name}.png`, options);
+        sprite.setPipeline("Light2D");
+
+        //Проверяем и подключаем карту нормалей
+        const normalFrame = this.textures.getFrame(`${atlas}_n`, `${name}_n.png`);
+        if (normalFrame) {
+            sprite.setNormalMap(normalFrame);
+        } else {
+            console.warn(`⚠️ Normal map not found for ${name}_n.png`);
+        }
+
+        return sprite;
+    }
 
 }

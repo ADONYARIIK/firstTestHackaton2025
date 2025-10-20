@@ -29,7 +29,8 @@ export default class BootScene extends Phaser.Scene {
         this.load.atlas('gui', './src/assets/atlas/gui_spritesheet.png', './src/assets/atlas/gui_spritesheet.json');
         //атлас спрайтов+нормали
         this.load.atlas('sprites', './src/assets/atlas/spritesheet.png', './src/assets/atlas/spritesheet.json');
-        this.load.image('sprites_n', './src/assets/atlas/spritesheet_n.png');
+        // this.load.image('sprites_n', './src/assets/atlas/normalmapsheet.png');
+        this.load.atlas('sprites_n', './src/assets/atlas/spritesheet_n.png', './src/assets/atlas/spritesheet_n.json');
         //fonts
         this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
         // Карта уровня
