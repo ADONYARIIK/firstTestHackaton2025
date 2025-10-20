@@ -5,8 +5,8 @@ export default class MainMenuScene extends Phaser.Scene {
         super('MainMenuScene')
     }
     create() {
-        const bg = this.add.image(0, 0, 'game', 'background.png').setOrigin(0, 0);
-        this.startBtn = this.add.image(270, 520, 'start').setScale(0.15).setInteractive({ useHandCursor: true });
+        const bg = this.add.image(0, 0, 'mainMenuBackground').setOrigin(0, 0);
+        this.startBtn = this.add.image(270, 520, 'gui', 'start.png').setScale(0.15).setInteractive({ useHandCursor: true });
         this.startBtn.on('pointerdown', () => {
             this.scene.start('GameScene');
         });
@@ -28,8 +28,8 @@ export default class MainMenuScene extends Phaser.Scene {
                 ease: 'Power2'
             });
         });
-        this.gameName = this.add.image(800, 130, 'gameName').setScale(0.4)
-        this.settingsIcon = this.add.image(1500, 30, 'settingsIcon').setScale(0.09).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
+        this.gameName = this.add.image(800, 130, 'gui', 'gameName.png').setScale(0.4)
+        this.settingsIcon = this.add.image(1500, 30, 'gui', 'settingsIcon.png').setScale(0.09).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
         this.settingsIcon.on('pointerdown', () => {
             this.showSettings();
         });
@@ -47,7 +47,7 @@ export default class MainMenuScene extends Phaser.Scene {
         this.settingsContainer.add(this.gfx);
 
 
-        this.closeBtn = this.add.image(270, 20, 'close').setVisible(false).setScale(0.05).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
+        this.closeBtn = this.add.image(270, 20, 'gui', 'close.png').setVisible(false).setScale(0.05).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
         this.settingsContainer.add(this.closeBtn);
 
         this.closeBtn.on('pointerdown', () => {
@@ -65,11 +65,11 @@ export default class MainMenuScene extends Phaser.Scene {
         let musicValue = 0;
 
         // Плюс-кнопка
-        this.plusMusicBtn = this.makeButton(200, 70, 'plusBtn')
+        this.plusMusicBtn = this.makeButton(200, 70, 'gui', 'plusBtn.png')
         this.settingsContainer.add(this.plusMusicBtn);
 
         // Минус-кнопка
-        this.minusMusicBtn = this.makeButton(140, 70, 'minusBtn')
+        this.minusMusicBtn = this.makeButton(140, 70, 'gui', 'minusBtn.png')
         this.settingsContainer.add(this.minusMusicBtn);
 
 
@@ -94,12 +94,12 @@ export default class MainMenuScene extends Phaser.Scene {
         let sfxValue = 0;
 
         // Плюс-кнопка SFX
-        this.plusSFXBtn = this.makeButton(200, 110, 'plusBtn');
+        this.plusSFXBtn = this.makeButton(200, 110, 'gui', 'plusBtn.png');
         this.settingsContainer.add(this.plusSFXBtn);
 
 
         // Минус-кнопка SFX
-        this.minusSFXBtn = this.makeButton(140, 110, 'minusBtn');
+        this.minusSFXBtn = this.makeButton(140, 110, 'gui', 'minusBtn.png');
         this.settingsContainer.add(this.minusSFXBtn);
 
 
@@ -149,8 +149,8 @@ export default class MainMenuScene extends Phaser.Scene {
     }
 
 
-    makeButton = (x, y, texture) => {
-        const btn = this.add.image(x, y, texture).setScale(0.5).setInteractive({ useHandCursor: true });;
+    makeButton = (x, y, atlas, name) => {
+        const btn = this.add.image(x, y, atlas, name).setScale(0.5).setInteractive({ useHandCursor: true });;
         // Наведение
         btn.on('pointerover', () => {
             this.tweens.add({
