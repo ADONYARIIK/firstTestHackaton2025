@@ -9,7 +9,7 @@ export default class GameScene extends Phaser.Scene {
         // Освещение
         // this.lights.enable();
         // this.lights.setAmbientColor(0x555555);
-        // // Привязываем normal map к атласу
+        // Привязываем normal map к атласу
         // this.textures.get("sprites").setNormalMap("sprites_n");
 
         // // Пример источника света
@@ -74,8 +74,8 @@ export default class GameScene extends Phaser.Scene {
 
     createPhysicsSprite(x, y, atlas, name) {
         //Загружаем данные форм из кэша
-        const shapes = this.cache.json.get("shapes");
-        const shapeData = shapes ? shapes[name] : null;
+        const shapesData = this.cache.json.get("shapes");
+        const shapeData = shapesData?.shapes?.[name];
 
         const options = { label: name };
 
@@ -84,7 +84,12 @@ export default class GameScene extends Phaser.Scene {
             const fixture = shapeData.fixtures[0];
 
             if (fixture.shapeType === "POLYGON" || fixture.shapeType === "MAGIC") {
-                const verts = fixture.vertices.map(([vx, vy]) => ({ x: vx, y: vy }));
+                //Собираем все полигоны (каждый из которых массив точек)
+                const verts = fixture.vertices.map(polygon =>
+                    polygon.map(v => ({ x: v.x, y: v.y }))
+                );
+
+                //В Phaser Matter используется fromVerts для сложных форм
                 options.shape = { type: "fromVerts", verts };
             }
             else if (fixture.shapeType === "CIRCLE") {
