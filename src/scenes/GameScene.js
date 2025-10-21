@@ -144,4 +144,83 @@ export default class GameScene extends Phaser.Scene {
         return sprite;
     }
 
+    createCharacterWithAnimations(x, y, atlas, color) {
+        const character = this.createNormalMapPhysicsSprite(x, y, atlas, `alien${color}`);
+
+        if (!this.anims.exists(`${color}_stand`)) {
+            this.anims.create({
+                key: `${color}_stand`,
+                frames: [{ key: atlas, frame: `alien${color}_stand.png` }],
+                frameRate: 1
+            });
+        }
+
+        if (!this.anims.exists(`${color}_duck`)) {
+            this.anims.create({
+                key: `${color}_duck`,
+                frames: [{ key: atlas, frame: `alien${color}_duck.png` }],
+                frameRate: 1
+            });
+        }
+
+        if (!this.anims.exists(`${color}_jump`)) {
+            this.anims.create({
+                key: `${color}_jump`,
+                frames: [{ key: atlas, frame: `alien${color}_jump.png` }],
+                frameRate: 1
+            });
+        }
+
+        if (!this.anims.exists(`${color}_hurt`)) {
+            this.anims.create({
+                key: `${color}_hurt`,
+                frames: [{ key: atlas, frame: `alien${color}_hurt.png` }],
+                frameRate: 1
+            });
+        }
+
+        if (!this.anims.exists(`${color}_walk`)) {
+            this.anims.create({
+                key: `${color}_walk`,
+                frames: this.anims.generateFrameNames(atlas, {
+                    prefix: `alien${color}_walk`,
+                    start: 1,
+                    end: 2,
+                    suffix: '.png'
+                }),
+                frameRate: 6,
+                repeat: -1
+            });
+        }
+
+        if (!this.anims.exists(`${color}_climb`)) {
+            this.anims.create({
+                key: `${color}_climb`,
+                frames: this.anims.generateFrameNames(atlas, {
+                    prefix: `alien${color}_climb`,
+                    start: 1,
+                    end: 2,
+                    suffix: '.png'
+                }),
+                frameRate: 6,
+                repeat: -1
+            });
+        }
+
+        if (!this.anims.exists(`${color}_swim`)) {
+            this.anims.create({
+                key: `${color}_swim`,
+                frames: this.anims.generateFrameNames(atlas, {
+                    prefix: `alien${color}_swim`,
+                    start: 1,
+                    end: 2,
+                    suffix: '.png'
+                }),
+                frameRate: 6,
+                repeat: -1
+            })
+        }
+
+        return character;
+    }
 }
