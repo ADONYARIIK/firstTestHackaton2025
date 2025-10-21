@@ -6,11 +6,46 @@ export default class GameScene extends Phaser.Scene {
     }
 
     create() {
+        // const map = this.make.tilemap({ key: 'level1' });
+
+        // const objectsLayer = map.getObjectLayer('Objects').objects;
+
+        this.objects = {};
+
+        // objectsLayer.forEach(obj => {
+        //     const { name, type, bodyType, sensor, normalMap } = obj.properties.reduce((acc, prop) => {
+        //         acc[prop.name] = prop.value;
+        //         return acc;
+        //     }, {});
+
+        //     let sprite;
+
+        //     if (type === 'character') {
+        //         sprite = this.createCharacterWithAnimations(obj.x, obj.y, 'sprites', name);
+        //         sprite.setPipeline('Light2D');
+        //     } else if (normalMap && bodyType !== 'none') {
+        //         sprite = this.createNormalMapPhysicsSprite(obj.x, obj.y, 'sprites', name);
+        //         sprite.setPipeline('Light2D');
+        //     } else if (bodyType !== 'none') {
+        //         sprite = this.createPhysicsSprite(obj.x, obj.y, 'sprites', name);
+        //     } else if (normalMap) {
+        //         sprite = this.createNormalMapSprite(obj.x, obj.y, 'sprites', name);
+        //         sprite.setPipeline('Light2D');
+        //     } else {
+        //         sprite = this.createSprite(obj.x, obj.y, 'sprites', name);
+        //     }
+
+        //     // Дополнительные настройки
+        //     if (sensor) sprite.setSensor(true);
+        //     if (bodyType === 'static') sprite.setStatic(true);
+
+        //     this.objects[name] = sprite;
+        // });
+
+
         // Освещение
         // this.lights.enable();
         // this.lights.setAmbientColor(0x555555);
-        // Привязываем normal map к атласу
-        // this.textures.get("sprites").setNormalMap("sprites_n");
 
         // // Пример источника света
         // this.lights.addLight(400, 300, 250).setColor(0xffddaa).setIntensity(2.0);
@@ -144,46 +179,46 @@ export default class GameScene extends Phaser.Scene {
         return sprite;
     }
 
-    createCharacterWithAnimations(x, y, atlas, color) {
-        const character = this.createNormalMapPhysicsSprite(x, y, atlas, `alien${color}`);
+    createCharacterWithAnimations(x, y, atlas, name) {
+        const character = this.createNormalMapPhysicsSprite(x, y, atlas, `alien${name}`);
 
-        if (!this.anims.exists(`${color}_stand`)) {
+        if (!this.anims.exists(`${name}_stand`)) {
             this.anims.create({
-                key: `${color}_stand`,
-                frames: [{ key: atlas, frame: `alien${color}_stand.png` }],
+                key: `${name}_stand`,
+                frames: [{ key: atlas, frame: `alien${name}_stand.png` }],
                 frameRate: 1
             });
         }
 
-        if (!this.anims.exists(`${color}_duck`)) {
+        if (!this.anims.exists(`${name}_duck`)) {
             this.anims.create({
-                key: `${color}_duck`,
-                frames: [{ key: atlas, frame: `alien${color}_duck.png` }],
+                key: `${name}_duck`,
+                frames: [{ key: atlas, frame: `alien${name}_duck.png` }],
                 frameRate: 1
             });
         }
 
-        if (!this.anims.exists(`${color}_jump`)) {
+        if (!this.anims.exists(`${name}_jump`)) {
             this.anims.create({
-                key: `${color}_jump`,
-                frames: [{ key: atlas, frame: `alien${color}_jump.png` }],
+                key: `${name}_jump`,
+                frames: [{ key: atlas, frame: `alien${name}_jump.png` }],
                 frameRate: 1
             });
         }
 
-        if (!this.anims.exists(`${color}_hurt`)) {
+        if (!this.anims.exists(`${name}_hurt`)) {
             this.anims.create({
-                key: `${color}_hurt`,
-                frames: [{ key: atlas, frame: `alien${color}_hurt.png` }],
+                key: `${name}_hurt`,
+                frames: [{ key: atlas, frame: `alien${name}_hurt.png` }],
                 frameRate: 1
             });
         }
 
-        if (!this.anims.exists(`${color}_walk`)) {
+        if (!this.anims.exists(`${name}_walk`)) {
             this.anims.create({
-                key: `${color}_walk`,
+                key: `${name}_walk`,
                 frames: this.anims.generateFrameNames(atlas, {
-                    prefix: `alien${color}_walk`,
+                    prefix: `alien${name}_walk`,
                     start: 1,
                     end: 2,
                     suffix: '.png'
@@ -193,11 +228,11 @@ export default class GameScene extends Phaser.Scene {
             });
         }
 
-        if (!this.anims.exists(`${color}_climb`)) {
+        if (!this.anims.exists(`${name}_climb`)) {
             this.anims.create({
-                key: `${color}_climb`,
+                key: `${name}_climb`,
                 frames: this.anims.generateFrameNames(atlas, {
-                    prefix: `alien${color}_climb`,
+                    prefix: `alien${name}_climb`,
                     start: 1,
                     end: 2,
                     suffix: '.png'
@@ -207,11 +242,11 @@ export default class GameScene extends Phaser.Scene {
             });
         }
 
-        if (!this.anims.exists(`${color}_swim`)) {
+        if (!this.anims.exists(`${name}_swim`)) {
             this.anims.create({
-                key: `${color}_swim`,
+                key: `${name}_swim`,
                 frames: this.anims.generateFrameNames(atlas, {
-                    prefix: `alien${color}_swim`,
+                    prefix: `alien${name}_swim`,
                     start: 1,
                     end: 2,
                     suffix: '.png'
