@@ -115,7 +115,7 @@
 					}
 				},
 				{
-					"filename": "keyYellow.png",
+					"filename": "star.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -130,6 +130,27 @@
 					},
 					"frame": {
 						"x": 1148,
+						"y": 1024,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "keyYellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 1218,
 						"y": 1024,
 						"w": 70,
 						"h": 70
@@ -150,49 +171,7 @@
 						"h": 70
 					},
 					"frame": {
-						"x": 1218,
-						"y": 1024,
-						"w": 70,
-						"h": 70
-					}
-				},
-				{
-					"filename": "keyBlue.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 70,
-						"h": 70
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 70,
-						"h": 70
-					},
-					"frame": {
 						"x": 1288,
-						"y": 1024,
-						"w": 70,
-						"h": 70
-					}
-				},
-				{
-					"filename": "star.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 70,
-						"h": 70
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 70,
-						"h": 70
-					},
-					"frame": {
-						"x": 1358,
 						"y": 1024,
 						"w": 70,
 						"h": 70
@@ -213,6 +192,27 @@
 						"h": 70
 					},
 					"frame": {
+						"x": 1358,
+						"y": 1024,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "keyBlue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
 						"x": 1148,
 						"y": 1094,
 						"w": 70,
@@ -220,7 +220,7 @@
 					}
 				},
 				{
-					"filename": "minusBtn.png",
+					"filename": "plusBtn.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -241,7 +241,7 @@
 					}
 				},
 				{
-					"filename": "plusBtn.png",
+					"filename": "minusBtn.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -262,7 +262,7 @@
 					}
 				},
 				{
-					"filename": "hud_heartEmpty.png",
+					"filename": "hud_heartHalf.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -304,7 +304,7 @@
 					}
 				},
 				{
-					"filename": "hud_heartHalf.png",
+					"filename": "hud_heartEmpty.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -325,7 +325,7 @@
 					}
 				},
 				{
-					"filename": "hud_p2.png",
+					"filename": "hud_p3Alt.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -346,7 +346,7 @@
 					}
 				},
 				{
-					"filename": "hud_p1Alt.png",
+					"filename": "hud_p3.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -367,7 +367,7 @@
 					}
 				},
 				{
-					"filename": "hud_p3Alt.png",
+					"filename": "hud_p2Alt.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -388,7 +388,7 @@
 					}
 				},
 				{
-					"filename": "hud_p1.png",
+					"filename": "hud_p2.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -409,7 +409,7 @@
 					}
 				},
 				{
-					"filename": "hud_p3.png",
+					"filename": "hud_p1Alt.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -430,7 +430,7 @@
 					}
 				},
 				{
-					"filename": "hud_p2Alt.png",
+					"filename": "hud_p1.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -472,7 +472,7 @@
 					}
 				},
 				{
-					"filename": "hud_keyBlue_disabled.png",
+					"filename": "hud_keyYellow_disabled.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -514,7 +514,7 @@
 					}
 				},
 				{
-					"filename": "hud_keyGreen.png",
+					"filename": "hud_keyYellow.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -535,7 +535,7 @@
 					}
 				},
 				{
-					"filename": "hud_keyRed.png",
+					"filename": "hud_keyRed_disabled.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -556,7 +556,7 @@
 					}
 				},
 				{
-					"filename": "hud_keyRed_disabled.png",
+					"filename": "hud_keyBlue_disabled.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -577,7 +577,7 @@
 					}
 				},
 				{
-					"filename": "hud_keyYellow.png",
+					"filename": "hud_keyGreem_disabled.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -598,7 +598,7 @@
 					}
 				},
 				{
-					"filename": "hud_keyYellow_disabled.png",
+					"filename": "hud_keyGreen.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -619,7 +619,7 @@
 					}
 				},
 				{
-					"filename": "hud_keyGreem_disabled.png",
+					"filename": "hud_keyRed.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -661,7 +661,7 @@
 					}
 				},
 				{
-					"filename": "hud_gem_green.png",
+					"filename": "hud_gem_blueEmpty.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -703,7 +703,7 @@
 					}
 				},
 				{
-					"filename": "hud_gem_yellow.png",
+					"filename": "hud_gem_yellowEmpty.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -719,6 +719,90 @@
 					"frame": {
 						"x": 1375,
 						"y": 1271,
+						"w": 46,
+						"h": 36
+					}
+				},
+				{
+					"filename": "hud_gem_yellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 46,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 46,
+						"h": 36
+					},
+					"frame": {
+						"x": 1282,
+						"y": 1307,
+						"w": 46,
+						"h": 36
+					}
+				},
+				{
+					"filename": "hud_gem_redEmpty.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 46,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 46,
+						"h": 36
+					},
+					"frame": {
+						"x": 1236,
+						"y": 1329,
+						"w": 46,
+						"h": 36
+					}
+				},
+				{
+					"filename": "hud_gem_green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 46,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 46,
+						"h": 36
+					},
+					"frame": {
+						"x": 1148,
+						"y": 1338,
+						"w": 46,
+						"h": 36
+					}
+				},
+				{
+					"filename": "hud_gem_greenEmpty.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 46,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 46,
+						"h": 36
+					},
+					"frame": {
+						"x": 1328,
+						"y": 1307,
 						"w": 46,
 						"h": 36
 					}
@@ -745,7 +829,7 @@
 					}
 				},
 				{
-					"filename": "hud_7.png",
+					"filename": "hud_9.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -766,7 +850,7 @@
 					}
 				},
 				{
-					"filename": "hud_9.png",
+					"filename": "hud_7.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -780,8 +864,8 @@
 						"h": 39
 					},
 					"frame": {
-						"x": 1282,
-						"y": 1307,
+						"x": 1194,
+						"y": 1331,
 						"w": 32,
 						"h": 39
 					}
@@ -801,8 +885,8 @@
 						"h": 38
 					},
 					"frame": {
-						"x": 1236,
-						"y": 1329,
+						"x": 1374,
+						"y": 1307,
 						"w": 32,
 						"h": 38
 					}
@@ -822,8 +906,8 @@
 						"h": 38
 					},
 					"frame": {
-						"x": 1192,
-						"y": 1331,
+						"x": 1282,
+						"y": 1343,
 						"w": 30,
 						"h": 38
 					}
@@ -843,8 +927,8 @@
 						"h": 38
 					},
 					"frame": {
-						"x": 1148,
-						"y": 1338,
+						"x": 1226,
+						"y": 1365,
 						"w": 30,
 						"h": 38
 					}
@@ -864,30 +948,9 @@
 						"h": 38
 					},
 					"frame": {
-						"x": 1314,
-						"y": 1307,
+						"x": 1194,
+						"y": 1370,
 						"w": 29,
-						"h": 38
-					}
-				},
-				{
-					"filename": "hud_5.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 28,
-						"h": 38
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 28,
-						"h": 38
-					},
-					"frame": {
-						"x": 1343,
-						"y": 1307,
-						"w": 28,
 						"h": 38
 					}
 				},
@@ -906,8 +969,29 @@
 						"h": 38
 					},
 					"frame": {
-						"x": 1371,
+						"x": 1406,
 						"y": 1307,
+						"w": 28,
+						"h": 38
+					}
+				},
+				{
+					"filename": "hud_5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 28,
+						"h": 38
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 28,
+						"h": 38
+					},
+					"frame": {
+						"x": 1148,
+						"y": 1374,
 						"w": 28,
 						"h": 38
 					}
@@ -927,8 +1011,8 @@
 						"h": 37
 					},
 					"frame": {
-						"x": 1399,
-						"y": 1307,
+						"x": 1256,
+						"y": 1365,
 						"w": 26,
 						"h": 37
 					}
@@ -948,8 +1032,8 @@
 						"h": 28
 					},
 					"frame": {
-						"x": 1399,
-						"y": 1344,
+						"x": 1312,
+						"y": 1343,
 						"w": 30,
 						"h": 28
 					}
