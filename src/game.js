@@ -4,11 +4,12 @@ import MainMenuScene from './scenes/MainMenuScene';
 import GameScene from './scenes/GameScene';
 import UIScene from './scenes/UIScene';
 import PauseScene from './scenes/PauseScene';
+import ShopScene from './scenes/ShopScene';
 
 export const config = {
     type: Phaser.AUTO,
-    width: 1920,
-    height: 1080,
+    width: 1600,
+    height: 900,
     backgroundColor: '#c52e2eff',
     parent: 'game-container',
     physics: {
@@ -27,5 +28,5 @@ export const config = {
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH
     },
-    scene: [BootScene, MainMenuScene, GameScene, UIScene, PauseScene]
+    scene: [BootScene, MainMenuScene, GameScene,ShopScene, UIScene, PauseScene]
 };

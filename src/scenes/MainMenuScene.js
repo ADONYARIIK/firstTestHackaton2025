@@ -5,13 +5,15 @@ export default class MainMenuScene extends Phaser.Scene {
         super('MainMenuScene')
     }
     create() {
-        const bg = this.add.image(0, 0, 'gui', 'bg_mainMenu.png').setOrigin(0, 0);
+        this.bg = this.add.image(0, 0, 'gui', 'bg_mainMenu.png').setOrigin(0, 0).setScale(1.05);
         
-        this.startBtn = this.add.image(340, 560, 'gui', 'start.png').setScale(0.15).setInteractive({ useHandCursor: true });
+        this.startBtn = this.add.image(300, 560, 'gui', 'start.png').setScale(0.15).setInteractive({ useHandCursor: true });
         this.startBtn.on('pointerdown', () => {
             this.scene.start('GameScene');
-            this.scene.launch('UIScene');
+            this.scene.launch('ShopScene');
         });
+
+        //анимация увеличения
         this.startBtn.on('pointerover', () => {
             this.tweens.add({
                 targets: this.startBtn,
@@ -21,7 +23,7 @@ export default class MainMenuScene extends Phaser.Scene {
             });
         });
 
-        // Уход курсора
+        // окончание анимации увеличения
         this.startBtn.on('pointerout', () => {
             this.tweens.add({
                 targets: this.startBtn,
@@ -31,16 +33,19 @@ export default class MainMenuScene extends Phaser.Scene {
             });
         });
         this.gameName = this.add.image(800, 130, 'gui', 'gameName.png').setScale(0.4)
-        this.settingsIcon = this.add.image(1500, 30, 'gui', 'settingsIcon.png').setScale(0.09).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
+        this.settingsIcon = this.add.image(1550, 30, 'gui', 'settingsIcon.png').setScale(0.09).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
         this.settingsIcon.on('pointerdown', () => {
             this.showSettings();
         });
+        //анимация прокрута настроек
         this.settingsIcon.on('pointerover', () => {
             this.rotateSettingIcon();
         });
-        this.settingsContainer = this.add.container(1200, 100).setVisible(false);
 
 
+        this.settingsContainer = this.add.container(1200, 100).setVisible(false); //создание settingsContainer
+
+        //создание контейнера настроек (видимый)
         this.gfx = this.add.graphics();
         this.gfx.fillStyle(0x000000, 0.8);
         this.gfx.lineStyle(3, 0x0000f1, 0.4);
@@ -176,6 +181,7 @@ export default class MainMenuScene extends Phaser.Scene {
 
         return btn;
     };
+    
     rotateCloseIcon() {
         this.tweens.add({
             targets: this.closeBtn,
