@@ -5,9 +5,9 @@ export default class MainMenuScene extends Phaser.Scene {
         super('MainMenuScene')
     }
     create() {
-        const bg = this.add.image(0, 0, 'gui', 'bg_mainMenu.png').setOrigin(0, 0);
+        this.bg = this.add.image(0, 0, 'gui', 'bg_mainMenu.png').setOrigin(0, 0).setScale(1.05);
         
-        this.startBtn = this.add.image(340, 560, 'gui', 'start.png').setScale(0.15).setInteractive({ useHandCursor: true });
+        this.startBtn = this.add.image(300, 560, 'gui', 'start.png').setScale(0.15).setInteractive({ useHandCursor: true });
         this.startBtn.on('pointerdown', () => {
             this.scene.start('GameScene');
             this.scene.launch('UIScene');
@@ -33,7 +33,7 @@ export default class MainMenuScene extends Phaser.Scene {
             });
         });
         this.gameName = this.add.image(800, 130, 'gui', 'gameName.png').setScale(0.4)
-        this.settingsIcon = this.add.image(1500, 30, 'gui', 'settingsIcon.png').setScale(0.09).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
+        this.settingsIcon = this.add.image(1550, 30, 'gui', 'settingsIcon.png').setScale(0.09).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
         this.settingsIcon.on('pointerdown', () => {
             this.showSettings();
         });
@@ -46,7 +46,7 @@ export default class MainMenuScene extends Phaser.Scene {
         this.settingsContainer = this.add.container(1200, 100).setVisible(false); //создание settingsContainer
 
         //создание контейнера настроек (видимый)
-        this.gfx = this.add.graphics();  
+        this.gfx = this.add.graphics();
         this.gfx.fillStyle(0x000000, 0.8);
         this.gfx.lineStyle(3, 0x0000f1, 0.4);
         this.gfx.fillRoundedRect(0, 0, 300, 300, 20);
@@ -110,7 +110,7 @@ export default class MainMenuScene extends Phaser.Scene {
         this.settingsContainer.add(this.minusSFXBtn);
 
 
-        
+
         this.sfxText = this.add.text(250, 100, `${sfxValue}%`, { fontSize: '20px', color: '#fff' });
         this.settingsContainer.add(this.sfxText);
 
@@ -181,6 +181,7 @@ export default class MainMenuScene extends Phaser.Scene {
 
         return btn;
     };
+    
     rotateCloseIcon() {
         this.tweens.add({
             targets: this.closeBtn,
