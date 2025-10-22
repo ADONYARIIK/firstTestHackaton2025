@@ -23,7 +23,6 @@ export default class BootScene extends Phaser.Scene {
     }
 
     loadAssets() {
-        this.load.image('mainMenuBackground', './src/assets/sprites/backgrounds/background.png');
         //атласы
         //атлас GUI
         this.load.atlas('gui', './src/assets/atlas/gui_spritesheet.png', './src/assets/atlas/gui_spritesheet.json');
