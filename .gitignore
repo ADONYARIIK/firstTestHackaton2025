@@ -157,3 +157,5 @@ pnpm-lock.yaml
 .env
 
 src/firebase/config.js
+
+texturePacker.ftpp
