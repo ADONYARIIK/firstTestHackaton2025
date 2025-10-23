@@ -25,8 +25,7 @@ export const config = {
         antialias: false,
     },
     scale: {
-        mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH
     },
-    scene: [BootScene, MainMenuScene, GameScene,ShopScene, UIScene, PauseScene]
+    scene: [BootScene, MainMenuScene, GameScene, UIScene, PauseScene, ShopScene]
 };
