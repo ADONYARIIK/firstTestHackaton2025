@@ -45,6 +45,9 @@
         "maps/level1.json#usable": {
             "scaleInDock": 1
         },
+        "maps/testLevel.json#blocks": {
+            "scaleInEditor": 1
+        },
         "maps/tilesets/tileset_decor.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
