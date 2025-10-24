@@ -32,9 +32,14 @@ export default class BootScene extends Phaser.Scene {
         //fonts
         this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
         // Карта уровня
-        // this.load.tilemapTiledJSON('level1', 'assets/maps/level1.json');
-        // this.load.image('tiles', 'assets/maps/tileset.png');
-        // Коллайдеры
-        // this.load.json("shapes", "assets/physics/shapes.json");
+        // this.load.tilemapTiledJSON('level1', './src/assets/maps/level1.json');
+        this.load.tilemapTiledJSON('test', './src/assets/maps/testLevel.json');
+        this.load.image('background', './src/assets/sprites/level1/background/bg_castle.png');
+        this.load.image('blocks', './src/assets/maps/tilesets/tileset_blocks.png');
+        this.load.image('decor', './src/assets/maps/tilesets/tileset_decor.png');
+        this.load.image('colect', './src/assets/maps/tilesets/tileset_colect.png');
+        this.load.image('enemies', './src/assets/maps/tilesets/tileset_enemies.png');
+        this.load.image('player', './src/assets/maps/tilesets/tileset_player.png');
+        this.load.image('usable', './src/assets/maps/tilesets/tileset_usable.png');
     }
 }
