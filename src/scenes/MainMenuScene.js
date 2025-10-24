@@ -11,11 +11,11 @@ export default class MainMenuScene extends Phaser.Scene {
 
         this.startBtn = this.add.image(300, 560, 'gui', 'start.png').setScale(0.15).setInteractive({ useHandCursor: true });
         this.startBtn.on('pointerdown', () => {
-            this.scene.start('GameScene');
+            // this.scene.start('GameScene');
             this.scene.launch('PauseScene');
             //this.scene.launch('UIScene');
             //this.scene.bringToTop('UIScene');
-            // this.scene.start('ShopScene');
+            this.scene.start('PauseScene');
         });
 
         //анимация увеличения
