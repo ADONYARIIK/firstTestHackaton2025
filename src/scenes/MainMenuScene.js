@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
-import {} from '../utils/animations.js';
+// import {} from '../utils/animations.js';
+import { changeVolume } from '../utils/soundSettings.js';
 
 export default class MainMenuScene extends Phaser.Scene {
     constructor() {
@@ -7,11 +8,14 @@ export default class MainMenuScene extends Phaser.Scene {
     }
     create() {
         this.bg = this.add.image(0, 0, 'gui', 'bg_mainMenu.png').setOrigin(0, 0).setScale(1.05);
-        
+
         this.startBtn = this.add.image(300, 560, 'gui', 'start.png').setScale(0.15).setInteractive({ useHandCursor: true });
         this.startBtn.on('pointerdown', () => {
             this.scene.start('GameScene');
-            this.scene.launch('ShopScene');
+            this.scene.launch('PauseScene');
+            //this.scene.launch('UIScene');
+            //this.scene.bringToTop('UIScene');
+            // this.scene.start('ShopScene');
         });
 
         //анимация увеличения
@@ -66,11 +70,10 @@ export default class MainMenuScene extends Phaser.Scene {
             this.rotateCloseIcon();
         });
 
-
+        let musicValue = 50;
 
         // Плюс-кнопка
         // Начальное значение
-        let musicValue = 0;
 
         // Плюс-кнопка
         this.plusMusicBtn = this.makeButton(200, 70, 'gui', 'plusBtn.png')
@@ -87,19 +90,18 @@ export default class MainMenuScene extends Phaser.Scene {
         this.settingsContainer.add(this.musicText);
 
         this.plusMusicBtn.on('pointerdown', () => {
-            musicValue += 10;
             if (musicValue > 100) musicValue = 100; // ограничение
             this.musicText.setText(`${musicValue}%`);
+            changeVolume(musicValue);
         });
 
         this.minusMusicBtn.on('pointerdown', () => {
-            musicValue -= 10;
             if (musicValue < 0) musicValue = 0; // ограничение
             this.musicText.setText(`${musicValue}%`);
+            changeVolume(musicValue);
         });
 
-
-        let sfxValue = 0;
+        let sfxValue = 50;
 
         // Плюс-кнопка SFX
         this.plusSFXBtn = this.makeButton(200, 110, 'gui', 'plusBtn.png');
@@ -117,15 +119,15 @@ export default class MainMenuScene extends Phaser.Scene {
 
 
         this.plusSFXBtn.on('pointerdown', () => {
-            sfxValue += 10;
             if (sfxValue > 100) sfxValue = 100; // ограничение
             this.sfxText.setText(`${sfxValue}%`);
+            changeVolume(sfxValue);
         });
 
         this.minusSFXBtn.on('pointerdown', () => {
-            sfxValue -= 10;
             if (sfxValue < 0) sfxValue = 0; // ограничение
             this.sfxText.setText(`${sfxValue}%`);
+            changeVolume(sfxValue);
         });
 
         this.plusMusicBtn.on('pointerout', () => this.input.setDefaultCursor('default'));
@@ -182,7 +184,7 @@ export default class MainMenuScene extends Phaser.Scene {
 
         return btn;
     };
-    
+
     rotateCloseIcon() {
         this.tweens.add({
             targets: this.closeBtn,

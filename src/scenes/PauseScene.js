@@ -6,6 +6,6 @@ export default class PauseScene extends Phaser.Scene {
     }
 
     create() {
-
+        const box = this.add.image(0,0,'gui','button_square_depth_gradient.png')
     }
 }
