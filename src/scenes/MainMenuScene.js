@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import {} from '../utils/animations.js';
+// import {} from '../utils/animations.js';
 
 export default class MainMenuScene extends Phaser.Scene {
     constructor() {
@@ -12,6 +12,9 @@ export default class MainMenuScene extends Phaser.Scene {
         this.startBtn.on('pointerdown', () => {
             this.scene.start('GameScene');
             this.scene.launch('PauseScene');
+            //this.scene.launch('UIScene');
+            //this.scene.bringToTop('UIScene');
+            // this.scene.start('ShopScene');
         });
 
         //анимация увеличения

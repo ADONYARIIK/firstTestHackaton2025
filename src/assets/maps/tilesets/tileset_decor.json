@@ -1,121 +1,16 @@
 {
 	"textures": [
 		{
-			"image": "gui_spritesheet",
+			"image": "tileset_decor",
 			"format": "RGBA8888",
 			"size": {
-				"w": 1935,
-				"h": 2065
+				"w": 490,
+				"h": 490
 			},
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "bg_mainMenu.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 1536,
-						"h": 1024
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 1536,
-						"h": 1024
-					},
-					"frame": {
-						"x": 0,
-						"y": 0,
-						"w": 1536,
-						"h": 1024
-					}
-				},
-				{
-					"filename": "start.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 1148,
-						"h": 493
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 1148,
-						"h": 493
-					},
-					"frame": {
-						"x": 0,
-						"y": 1024,
-						"w": 1148,
-						"h": 493
-					}
-				},
-				{
-					"filename": "gameName.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 923,
-						"h": 548
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 923,
-						"h": 548
-					},
-					"frame": {
-						"x": 0,
-						"y": 1517,
-						"w": 923,
-						"h": 548
-					}
-				},
-				{
-					"filename": "settingsIcon.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 512,
-						"h": 512
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 512,
-						"h": 512
-					},
-					"frame": {
-						"x": 923,
-						"y": 1517,
-						"w": 512,
-						"h": 512
-					}
-				},
-				{
-					"filename": "close.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 500,
-						"h": 500
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 500,
-						"h": 500
-					},
-					"frame": {
-						"x": 1435,
-						"y": 1024,
-						"w": 500,
-						"h": 500
-					}
-				},
-				{
-					"filename": "star.png",
+					"filename": "signCoin.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -129,829 +24,892 @@
 						"h": 70
 					},
 					"frame": {
-						"x": 1148,
-						"y": 1024,
+						"x": 0,
+						"y": 0,
 						"w": 70,
 						"h": 70
 					}
 				},
 				{
-					"filename": "plusBtn.png",
+					"filename": "chain.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 65,
-						"h": 65
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 65,
-						"h": 65
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1218,
-						"y": 1024,
-						"w": 65,
-						"h": 65
+						"x": 70,
+						"y": 0,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "minusBtn.png",
+					"filename": "dirtCaveBR.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 65,
-						"h": 65
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 65,
-						"h": 65
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1283,
-						"y": 1024,
-						"w": 65,
-						"h": 65
+						"x": 0,
+						"y": 70,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_heartHalf.png",
+					"filename": "dirtCaveBottom.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 53,
-						"h": 45
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 53,
-						"h": 45
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1348,
-						"y": 1024,
-						"w": 53,
-						"h": 45
+						"x": 70,
+						"y": 70,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_heartEmpty.png",
+					"filename": "dirtCaveSpikeBottom.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 53,
-						"h": 45
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 53,
-						"h": 45
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1348,
-						"y": 1069,
-						"w": 53,
-						"h": 45
+						"x": 140,
+						"y": 0,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_heartFull.png",
+					"filename": "dirtCaveSpikeTop.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 53,
-						"h": 45
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 53,
-						"h": 45
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1218,
-						"y": 1089,
-						"w": 53,
-						"h": 45
+						"x": 140,
+						"y": 70,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_p3Alt.png",
+					"filename": "dirtCaveTop.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1148,
-						"y": 1094,
-						"w": 47,
-						"h": 47
+						"x": 0,
+						"y": 140,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_coins.png",
+					"filename": "dirtCaveUL.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1271,
-						"y": 1089,
-						"w": 47,
-						"h": 47
+						"x": 70,
+						"y": 140,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_p3.png",
+					"filename": "dirtCaveUR.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1195,
-						"y": 1134,
-						"w": 47,
-						"h": 47
+						"x": 140,
+						"y": 140,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_p2Alt.png",
+					"filename": "mushroomBrown.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1148,
-						"y": 1141,
-						"w": 47,
-						"h": 47
+						"x": 210,
+						"y": 0,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_p2.png",
+					"filename": "mushroomRed.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1318,
-						"y": 1114,
-						"w": 47,
-						"h": 47
+						"x": 210,
+						"y": 70,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_p1Alt.png",
+					"filename": "plant.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1365,
-						"y": 1114,
-						"w": 47,
-						"h": 47
+						"x": 210,
+						"y": 140,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_p1.png",
+					"filename": "plantPurple.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 47,
-						"h": 47
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1242,
-						"y": 1136,
-						"w": 47,
-						"h": 47
+						"x": 0,
+						"y": 210,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_keyGreem_disabled.png",
+					"filename": "rock.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1195,
-						"y": 1181,
-						"w": 44,
-						"h": 40
+						"x": 70,
+						"y": 210,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_keyYellow_disabled.png",
+					"filename": "rockMoss.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1148,
-						"y": 1188,
-						"w": 44,
-						"h": 40
+						"x": 140,
+						"y": 210,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_keyYellow.png",
+					"filename": "rockMossAlt.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1289,
-						"y": 1161,
-						"w": 44,
-						"h": 40
+						"x": 210,
+						"y": 210,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_keyRed_disabled.png",
+					"filename": "ropeAttached.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1239,
-						"y": 1183,
-						"w": 44,
-						"h": 40
+						"x": 280,
+						"y": 0,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_keyRed.png",
+					"filename": "ropeHorizontal.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1192,
-						"y": 1221,
-						"w": 44,
-						"h": 40
+						"x": 280,
+						"y": 70,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_keyGreen.png",
+					"filename": "ropeVertical.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1148,
-						"y": 1228,
-						"w": 44,
-						"h": 40
+						"x": 280,
+						"y": 140,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_keyBlue_disabled.png",
+					"filename": "sign.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1333,
-						"y": 1161,
-						"w": 44,
-						"h": 40
+						"x": 280,
+						"y": 210,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_keyBlue.png",
+					"filename": "signBed.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 44,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1377,
-						"y": 1161,
-						"w": 44,
-						"h": 40
+						"x": 0,
+						"y": 280,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_gem_green.png",
+					"filename": "dirtCaveBL.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 923,
-						"y": 2029,
-						"w": 46,
-						"h": 36
+						"x": 70,
+						"y": 280,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_gem_blue.png",
+					"filename": "signCup.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 969,
-						"y": 2029,
-						"w": 46,
-						"h": 36
+						"x": 140,
+						"y": 280,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_gem_yellowEmpty.png",
+					"filename": "signExit.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1015,
-						"y": 2029,
-						"w": 46,
-						"h": 36
+						"x": 210,
+						"y": 280,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_gem_yellow.png",
+					"filename": "signHangingBed.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1061,
-						"y": 2029,
-						"w": 46,
-						"h": 36
+						"x": 280,
+						"y": 280,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_gem_redEmpty.png",
+					"filename": "signHangingCoin.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1107,
-						"y": 2029,
-						"w": 46,
-						"h": 36
+						"x": 350,
+						"y": 0,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_gem_red.png",
+					"filename": "signHangingCup.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1153,
-						"y": 2029,
-						"w": 46,
-						"h": 36
+						"x": 350,
+						"y": 70,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_gem_greenEmpty.png",
+					"filename": "signLeft.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1199,
-						"y": 2029,
-						"w": 46,
-						"h": 36
+						"x": 350,
+						"y": 140,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_gem_blueEmpty.png",
+					"filename": "signRight.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 46,
-						"h": 36
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1245,
-						"y": 2029,
-						"w": 46,
-						"h": 36
+						"x": 350,
+						"y": 210,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_8.png",
+					"filename": "stoneCaveBL.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 40
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1401,
-						"y": 1024,
-						"w": 32,
-						"h": 40
+						"x": 350,
+						"y": 280,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_7.png",
+					"filename": "stoneCaveBR.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 39
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 39
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1401,
-						"y": 1064,
-						"w": 32,
-						"h": 39
+						"x": 0,
+						"y": 350,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_9.png",
+					"filename": "stoneCaveBottom.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 39
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 39
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1283,
-						"y": 1201,
-						"w": 32,
-						"h": 39
+						"x": 70,
+						"y": 350,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_2.png",
+					"filename": "stoneCaveSpikeBottom.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1236,
-						"y": 1223,
-						"w": 32,
-						"h": 38
+						"x": 140,
+						"y": 350,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_6.png",
+					"filename": "stoneCaveSpikeTop.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 30,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 30,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1315,
-						"y": 1201,
-						"w": 30,
-						"h": 38
+						"x": 210,
+						"y": 350,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_0.png",
+					"filename": "stoneCaveTop.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 30,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 30,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1345,
-						"y": 1201,
-						"w": 30,
-						"h": 38
+						"x": 280,
+						"y": 350,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_4.png",
+					"filename": "stoneCaveUL.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 29,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 29,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1375,
-						"y": 1201,
-						"w": 29,
-						"h": 38
+						"x": 350,
+						"y": 350,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_3.png",
+					"filename": "stoneCaveUR.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 28,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 28,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1404,
-						"y": 1201,
-						"w": 28,
-						"h": 38
+						"x": 420,
+						"y": 0,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_5.png",
+					"filename": "tochLit.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 28,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 28,
-						"h": 38
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1315,
-						"y": 1239,
-						"w": 28,
-						"h": 38
+						"x": 420,
+						"y": 70,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_1.png",
+					"filename": "tochLit2.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 26,
-						"h": 37
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 26,
-						"h": 37
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1268,
-						"y": 1240,
-						"w": 26,
-						"h": 37
+						"x": 420,
+						"y": 140,
+						"w": 70,
+						"h": 70
 					}
 				},
 				{
-					"filename": "hud_x.png",
+					"filename": "torch.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 30,
-						"h": 28
+						"w": 70,
+						"h": 70
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 30,
-						"h": 28
+						"w": 70,
+						"h": 70
 					},
 					"frame": {
-						"x": 1192,
-						"y": 1261,
-						"w": 30,
-						"h": 28
+						"x": 420,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "weight.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "weightChained.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "wireHook.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 420,
+						"w": 70,
+						"h": 70
 					}
 				}
 			]

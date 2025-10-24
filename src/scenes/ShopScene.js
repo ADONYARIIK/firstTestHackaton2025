@@ -16,7 +16,7 @@ export default class ShopScene extends Phaser.Scene {
         this.createItemBox(1200, 600);
 
     }
-    createItemBox(x, y) {       
+    createItemBox(x, y) {
         const ladder = this.add.image(x, y, 'sprites', 'boxEmpty.png').setOrigin(0, 0);
         ladder.setScale(2)
     }
