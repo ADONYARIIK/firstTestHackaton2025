@@ -146,7 +146,7 @@
   | ------ | ----- |
   | Height | 1400  |
   | Soft   | 5     |
-  
+
 ## Level Shop:
 
 - Bricks:
