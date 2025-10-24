@@ -41,7 +41,9 @@ export default class UIScene extends Phaser.Scene {
 
         this.settingsIcon = this.add.image(1550, 30, 'gui', 'settingsIcon.png').setScale(0.09).setTintFill(0xffffff).setInteractive({ useHandCursor: true });
         this.settingsIcon.on('pointerdown', () => {
-            this.showSettings();
+            this.scene.launch('PauseScene');
+            this.scene.stop('GameScene');
+            this.scene.stop('UIScene');
         });
         //анимация прокрута настроек
         this.settingsIcon.on('pointerover', () => {
