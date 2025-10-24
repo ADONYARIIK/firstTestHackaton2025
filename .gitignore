@@ -157,3 +157,7 @@ pnpm-lock.yaml
 .env
 
 src/firebase/config.js
+
+.ftpp
+.tiled-project
+.tiled-session

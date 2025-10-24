@@ -1,0 +1,1510 @@
+{
+	"textures": [
+		{
+			"image": "tileset_usable",
+			"format": "RGBA8888",
+			"size": {
+				"w": 630,
+				"h": 560
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "laserBlueVertical.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxCoin.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxCoinAlt_disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxCoin_disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxExplosive.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxExplosiveAlt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxExplosive_disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxItem.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxItemAlt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxItemAlt_disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxItem_disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "buttonBlue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "buttonBlue_pressed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "buttonGreen.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "buttonGreen_pressed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "buttonRed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "buttonRed_pressed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "buttonYellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "buttonYellow_pressed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagBlue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagBlue2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagBlueHanging.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagGreen.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagGreen2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagGreenHanging.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagRed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 350,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagRed2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 350,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagRedHanging.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 350,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagYellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 350,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagYellow2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 350,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "flagYellowHanging.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "ladder_mid.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "ladder_top.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserBlueBurst.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserBlueHorizontal.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "boxCoinAlt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 350,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserDown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserDownShoot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserGreenBurst.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserGreenHorizontal.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserGreenVertical.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserLeft.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserLeftShoot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 420,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserRedBurst.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 420,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserRedHorizontal.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 420,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserRedVertical.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 420,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserRight.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 420,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserRightShoot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 350,
+						"y": 420,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserSwitchBlueOff.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 420,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserSwitchBlueOn.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 490,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserSwitchGreenOff.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 490,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserSwitchGreenOn.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 490,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserSwitchRedOff.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 490,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserSwitchRedOn.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 490,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserSwitchYellowOff.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 490,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserSwitchYellowOn.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 490,
+						"y": 420,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserUp.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 0,
+						"y": 490,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserUpShoot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 70,
+						"y": 490,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserYellowBurst.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 140,
+						"y": 490,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserYellowHorizontal.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 210,
+						"y": 490,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "laserYellowVertical.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 280,
+						"y": 490,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "lock_blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 350,
+						"y": 490,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "lock_green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 420,
+						"y": 490,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "lock_red.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 490,
+						"y": 490,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "lock_yellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 560,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "spikes.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 560,
+						"y": 70,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "springboardDown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 560,
+						"y": 140,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "springboardUp.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 560,
+						"y": 210,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "switchLeft.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 560,
+						"y": 280,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "switchMid.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 560,
+						"y": 350,
+						"w": 70,
+						"h": 70
+					}
+				},
+				{
+					"filename": "switchRight.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 70
+					},
+					"frame": {
+						"x": 560,
+						"y": 420,
+						"w": 70,
+						"h": 70
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7"
+	}
+}

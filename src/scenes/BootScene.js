@@ -23,15 +23,23 @@ export default class BootScene extends Phaser.Scene {
     }
 
     loadAssets() {
-        this.load.image('settingsIcon', './src/assets/newSprites/settingsIcon.png');
-        this.load.atlas('game', './src/assets/atlas/spritesheet.png', './src/assets/atlas/spritesheet.json');
+        //атласы
+        //атлас GUI
+        this.load.atlas('gui', './src/assets/atlas/gui_spritesheet.png', './src/assets/atlas/gui_spritesheet.json');
+        //атлас спрайтов+нормали
+        this.load.atlas('sprites', './src/assets/atlas/spritesheet.png', './src/assets/atlas/spritesheet.json');
+        this.load.atlas('sprites_n', './src/assets/atlas/spritesheet_n.png', './src/assets/atlas/spritesheet_n.json');
+        //fonts
         this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
-
-        // Атлас спрайтов + нормали
-        // this.load.atlas("sprites", "assets/atlas/spritesheet.png", "assets/atlas/spritesheet.json");
-        // this.load.image("sprites_n", "assets/atlas/spritesheet_n.png");
-
-        // Коллайдеры
-        // this.load.json("shapes", "assets/physics/shapes.json");
+        // Карта уровня
+        // this.load.tilemapTiledJSON('level1', './src/assets/maps/level1.json');
+        this.load.tilemapTiledJSON('test', './src/assets/maps/testLevel.json');
+        this.load.image('background', './src/assets/sprites/level1/background/bg_castle.png');
+        this.load.image('blocks', './src/assets/maps/tilesets/tileset_blocks.png');
+        this.load.image('decor', './src/assets/maps/tilesets/tileset_decor.png');
+        this.load.image('colect', './src/assets/maps/tilesets/tileset_colect.png');
+        this.load.image('enemies', './src/assets/maps/tilesets/tileset_enemies.png');
+        this.load.image('player', './src/assets/maps/tilesets/tileset_player.png');
+        this.load.image('usable', './src/assets/maps/tilesets/tileset_usable.png');
     }
 }
