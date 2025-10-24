@@ -15,9 +15,6 @@ export default class ShopScene extends Phaser.Scene {
 
     }
     createItemBox(x,y){
-        const ladder = this.add.image(x, y, 'sprites', 'fenceGate.png').setOrigin(0, 0);
+        const ladder = this.add.image(x, y, 'sprites', 'boxEmpty.png').setOrigin(0, 0);
         ladder.setScale(2)
-        const bridge = this.add.image(x, y, 'sprites', 'bridge.png').setOrigin(0, 0);
-        bridge.setScale(2)
-    }
 }

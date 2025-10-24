@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import {} from '../utils/animations.js';
 
 export default class UIScene extends Phaser.Scene {
     constructor() {
