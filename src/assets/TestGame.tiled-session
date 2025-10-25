@@ -3,10 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "maps/level1.json",
+    "activeFile": "maps/testLevel.json",
     "expandedProjectPaths": [
+        "maps/tilesets/test",
+        ".",
         "maps",
-        "."
+        "maps/tilesets"
     ],
     "file.lastUsedOpenFilter": "Все файлы (*)",
     "fileStates": {
@@ -45,7 +47,34 @@
         "maps/level1.json#usable": {
             "scaleInDock": 1
         },
+        "maps/testLevel.json": {
+            "scale": 0.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 1051,
+                "y": 701
+            }
+        },
+        "maps/testLevel.json#background": {
+            "scaleInDock": 1
+        },
         "maps/testLevel.json#blocks": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 1
+        },
+        "maps/testLevel.json#decor": {
+            "scaleInDock": 1
+        },
+        "maps/tilesets/test/tileset_background.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "maps/tilesets/test/tileset_blocks.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "maps/tilesets/test/tileset_decor.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "maps/tilesets/tileset_decor.tsx": {
@@ -68,11 +97,18 @@
     "map.tileWidth": 70,
     "map.width": 30,
     "openFiles": [
-        "maps/level1.json"
+        "maps/testLevel.json",
+        "maps/tilesets/test/tileset_blocks.tsx",
+        "maps/tilesets/test/tileset_decor.tsx",
+        "maps/tilesets/test/tileset_background.tsx"
     ],
     "project": "TestGame.tiled-project",
-    "property.type": "string",
+    "property.type": "bool",
     "recentFiles": [
+        "maps/tilesets/test/tileset_background.tsx",
+        "maps/tilesets/test/tileset_decor.tsx",
+        "maps/tilesets/test/tileset_blocks.tsx",
+        "maps/testLevel.json",
         "maps/level1.json",
         "maps/tilesets/tileset_enemies.tsx",
         "maps/tilesets/tileset_decor.tsx",
