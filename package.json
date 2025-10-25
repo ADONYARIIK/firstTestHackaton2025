@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "firebase deploy",
-    "build:normalmap-atlas": "python ./tools/build_normalmapsheet.py",
-    "build:shapes": "python ./tools/exportShapes.py"
+    "build:normalmap-atlas": "python ./tools/build_normalmapsheet.py"
   },
   "keywords": [
     "phaser",
