@@ -10,7 +10,7 @@ export const config = {
     type: Phaser.AUTO,
     width: 1600,
     height: 900,
-    backgroundColor: '#ba6aa7',
+    backgroundColor: '0xba6aa7',
     parent: 'game-container',
     physics: {
         default: 'matter',

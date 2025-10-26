@@ -18,7 +18,7 @@
           "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "4",
+          "_fixture_id": "0",
           "chamfer": 0,
           "rectangle": {
             "x": 28.05675474824062,
@@ -1775,60 +1775,17 @@
       "bodyType": "STATIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "419",
-          "vertices": [
-            [
-              43,
-              82
-            ],
-            [
-              32,
-              98
-            ],
-            [
-              92,
-              98
-            ],
-            [
-              82,
-              85
-            ],
-            [
-              85,
-              55
-            ],
-            [
-              81,
-              33
-            ],
-            [
-              73,
-              30
-            ],
-            [
-              68,
-              42
-            ],
-            [
-              57,
-              42
-            ],
-            [
-              51,
-              30
-            ],
-            [
-              46,
-              30
-            ],
-            [
-              39,
-              55
-            ]
-          ]
+          "_fixture_id": "2",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 32.99642272658827,
+            "y": 27.59725075025479,
+            "w": 59.08814655085177,
+            "h": 69.88649050351871
+          }
         }
       ],
       "label": "barnacle"
@@ -1850,52 +1807,17 @@
       "bodyType": "STATIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "420",
-          "vertices": [
-            [
-              44,
-              83
-            ],
-            [
-              33,
-              98
-            ],
-            [
-              93,
-              98
-            ],
-            [
-              82,
-              83
-            ],
-            [
-              86,
-              71
-            ],
-            [
-              84,
-              49
-            ],
-            [
-              71,
-              30
-            ],
-            [
-              62,
-              30
-            ],
-            [
-              55,
-              30
-            ],
-            [
-              40,
-              56
-            ]
-          ]
+          "_fixture_id": "4",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 34.03030672205639,
+            "y": 28.746010745219365,
+            "w": 58.97327055135532,
+            "h": 68.39310251006481
+          }
         }
       ],
       "label": "barnacle_atack"
@@ -1917,60 +1839,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "421",
-          "vertices": [
-            [
-              42,
-              83
-            ],
-            [
-              31,
-              98
-            ],
-            [
-              91,
-              98
-            ],
-            [
-              81,
-              85
-            ],
-            [
-              84,
-              56
-            ],
-            [
-              80,
-              34
-            ],
-            [
-              72,
-              31
-            ],
-            [
-              66,
-              43
-            ],
-            [
-              56,
-              43
-            ],
-            [
-              50,
-              31
-            ],
-            [
-              45,
-              31
-            ],
-            [
-              38,
-              59
-            ]
-          ]
+          "_fixture_id": "6",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 31.962538731120162,
+            "y": 28.746010745219362,
+            "w": 59.432774549341154,
+            "h": 68.85260650805063
+          }
         }
       ],
       "label": "barnacle_dead"
@@ -2010,68 +1889,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "422",
-          "vertices": [
-            [
-              47,
-              60
-            ],
-            [
-              51,
-              78
-            ],
-            [
-              71,
-              86
-            ],
-            [
-              85,
-              71
-            ],
-            [
-              79,
-              61
-            ],
-            [
-              97,
-              56
-            ],
-            [
-              98,
-              40
-            ],
-            [
-              78,
-              43
-            ],
-            [
-              66,
-              60
-            ],
-            [
-              58,
-              58
-            ],
-            [
-              49,
-              43
-            ],
-            [
-              31,
-              39
-            ],
-            [
-              28,
-              39
-            ],
-            [
-              30,
-              56
-            ]
-          ]
+          "_fixture_id": "8",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 28.05675474824062,
+            "y": 38.625346701914665,
+            "w": 70.2311185020081,
+            "h": 48.404678597681276
+          }
         }
       ],
       "label": "bat_dead"
@@ -2093,68 +1921,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
-          "isSensor": true,
+          "shapeType": "RECTANGLE",
+          "isSensor": false,
           "label": "",
-          "_fixture_id": "423",
-          "vertices": [
-            [
-              47,
-              60
-            ],
-            [
-              51,
-              78
-            ],
-            [
-              71,
-              86
-            ],
-            [
-              85,
-              71
-            ],
-            [
-              79,
-              61
-            ],
-            [
-              97,
-              56
-            ],
-            [
-              98,
-              40
-            ],
-            [
-              78,
-              43
-            ],
-            [
-              66,
-              60
-            ],
-            [
-              58,
-              58
-            ],
-            [
-              49,
-              43
-            ],
-            [
-              31,
-              39
-            ],
-            [
-              28,
-              39
-            ],
-            [
-              30,
-              56
-            ]
-          ]
+          "_fixture_id": "10",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 28.28650674723354,
+            "y": 39.42947869838987,
+            "w": 69.77161450402228,
+            "h": 47.02616660372378
+          }
         }
       ],
       "label": "bat_fly1"
@@ -2176,64 +1953,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
-          "isSensor": true,
+          "shapeType": "RECTANGLE",
+          "isSensor": false,
           "label": "",
-          "_fixture_id": "424",
-          "vertices": [
-            [
-              54,
-              75
-            ],
-            [
-              68,
-              80
-            ],
-            [
-              73,
-              79
-            ],
-            [
-              80,
-              64
-            ],
-            [
-              89,
-              67
-            ],
-            [
-              97,
-              57
-            ],
-            [
-              83,
-              50
-            ],
-            [
-              67,
-              58
-            ],
-            [
-              48,
-              50
-            ],
-            [
-              32,
-              54
-            ],
-            [
-              29,
-              54
-            ],
-            [
-              35,
-              66
-            ],
-            [
-              50,
-              63
-            ]
-          ]
+          "_fixture_id": "12",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 29.205514743205192,
+            "y": 49.883194652567454,
+            "w": 68.16335051107188,
+            "h": 30.713774675226894
+          }
         }
       ],
       "label": "bat_fly2"
@@ -2255,48 +1985,17 @@
       "bodyType": "STATIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
-          "isSensor": true,
+          "shapeType": "RECTANGLE",
+          "isSensor": false,
           "label": "",
-          "_fixture_id": "425",
-          "vertices": [
-            [
-              47,
-              92
-            ],
-            [
-              69,
-              76
-            ],
-            [
-              78,
-              83
-            ],
-            [
-              85,
-              64
-            ],
-            [
-              85,
-              54
-            ],
-            [
-              74,
-              36
-            ],
-            [
-              59,
-              36
-            ],
-            [
-              53,
-              36
-            ],
-            [
-              40,
-              62
-            ]
-          ]
+          "_fixture_id": "14",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 39.31460269889341,
+            "y": 34.489810720042215,
+            "w": 45.303026611276934,
+            "h": 56.67575056142619
+          }
         }
       ],
       "label": "bat_hang"
@@ -8014,60 +7713,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "427",
-          "vertices": [
-            [
-              44,
-              75
-            ],
-            [
-              44,
-              84
-            ],
-            [
-              69,
-              78
-            ],
-            [
-              80,
-              65
-            ],
-            [
-              96,
-              71
-            ],
-            [
-              94,
-              50
-            ],
-            [
-              80,
-              57
-            ],
-            [
-              49,
-              42
-            ],
-            [
-              38,
-              48
-            ],
-            [
-              36,
-              48
-            ],
-            [
-              30,
-              63
-            ],
-            [
-              37,
-              74
-            ]
-          ]
+          "_fixture_id": "18",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 30.35427473816976,
+            "y": 42.64600668429067,
+            "w": 65.52120252265335,
+            "h": 41.052614629908035
+          }
         }
       ],
       "label": "fishDead"
@@ -8089,68 +7745,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
-          "isSensor": true,
+          "shapeType": "RECTANGLE",
+          "isSensor": false,
           "label": "",
-          "_fixture_id": "428",
-          "vertices": [
-            [
-              35,
-              53
-            ],
-            [
-              31,
-              59
-            ],
-            [
-              34,
-              76
-            ],
-            [
-              45,
-              79
-            ],
-            [
-              47,
-              84
-            ],
-            [
-              72,
-              76
-            ],
-            [
-              80,
-              69
-            ],
-            [
-              94,
-              76
-            ],
-            [
-              96,
-              55
-            ],
-            [
-              80,
-              61
-            ],
-            [
-              69,
-              48
-            ],
-            [
-              46,
-              42
-            ],
-            [
-              44,
-              42
-            ],
-            [
-              44,
-              51
-            ]
-          ]
+          "_fixture_id": "19",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 30.35427473816976,
+            "y": 42.99063468278003,
+            "w": 65.75095452164628,
+            "h": 39.90385463494346
+          }
         }
       ],
       "label": "fishSwim1"
@@ -8172,60 +7777,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
-          "isSensor": true,
+          "shapeType": "RECTANGLE",
+          "isSensor": false,
           "label": "",
-          "_fixture_id": "429",
-          "vertices": [
-            [
-              33,
-              58
-            ],
-            [
-              36,
-              75
-            ],
-            [
-              54,
-              84
-            ],
-            [
-              82,
-              68
-            ],
-            [
-              92,
-              74
-            ],
-            [
-              94,
-              53
-            ],
-            [
-              82,
-              60
-            ],
-            [
-              71,
-              47
-            ],
-            [
-              48,
-              41
-            ],
-            [
-              46,
-              41
-            ],
-            [
-              46,
-              50
-            ],
-            [
-              37,
-              52
-            ]
-          ]
+          "_fixture_id": "21",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 31.8476627316237,
+            "y": 41.61212268882255,
+            "w": 61.73029453927029,
+            "h": 42.08649862537614
+          }
         }
       ],
       "label": "fishSwim2"
@@ -9099,68 +8661,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "430",
-          "vertices": [
-            [
-              28,
-              74
-            ],
-            [
-              34,
-              83
-            ],
-            [
-              49,
-              78
-            ],
-            [
-              61.702258790903784,
-              81.03553051865907
-            ],
-            [
-              75.31074400302126,
-              77.88512400050355
-            ],
-            [
-              84,
-              84
-            ],
-            [
-              93,
-              81
-            ],
-            [
-              95,
-              71
-            ],
-            [
-              83,
-              65
-            ],
-            [
-              89,
-              56
-            ],
-            [
-              87,
-              47
-            ],
-            [
-              59.78511993957485,
-              45.50661200654606
-            ],
-            [
-              42.966116004531884,
-              49.18264399043268
-            ],
-            [
-              40,
-              65
-            ]
-          ]
+          "_fixture_id": "23",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 29.779894740687475,
+            "y": 44.139394677744605,
+            "w": 65.29145052366046,
+            "h": 39.55922663645408
+          }
         }
       ],
       "label": "flyDead"
@@ -9182,68 +8693,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "431",
-          "vertices": [
-            [
-              44,
-              67
-            ],
-            [
-              46,
-              78
-            ],
-            [
-              54,
-              82
-            ],
-            [
-              84,
-              80
-            ],
-            [
-              83,
-              67
-            ],
-            [
-              98,
-              58
-            ],
-            [
-              91,
-              46
-            ],
-            [
-              74,
-              54
-            ],
-            [
-              63.77002678184001,
-              50.59339065209796
-            ],
-            [
-              51,
-              53
-            ],
-            [
-              44,
-              47
-            ],
-            [
-              35,
-              47
-            ],
-            [
-              33,
-              47
-            ],
-            [
-              29,
-              60
-            ]
-          ]
+          "_fixture_id": "28",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 28.86088674471582,
+            "y": 45.51790667170209,
+            "w": 68.16335051107188,
+            "h": 35.88319465256746
+          }
         }
       ],
       "label": "flyFly1"
@@ -9265,60 +8725,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "432",
-          "vertices": [
-            [
-              44,
-              66
-            ],
-            [
-              45,
-              74
-            ],
-            [
-              52,
-              78
-            ],
-            [
-              81.41239598942559,
-              77.19586800352481
-            ],
-            [
-              83,
-              67
-            ],
-            [
-              96,
-              67
-            ],
-            [
-              98,
-              61
-            ],
-            [
-              93,
-              53
-            ],
-            [
-              74,
-              54
-            ],
-            [
-              66,
-              49
-            ],
-            [
-              31,
-              53
-            ],
-            [
-              29,
-              65
-            ]
-          ]
+          "_fixture_id": "29",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 29.09063874370873,
+            "y": 48.045178660624146,
+            "w": 68.39310251006481,
+            "h": 31.288154672709176
+          }
         }
       ],
       "label": "flyFly2"
@@ -9546,60 +8963,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "433",
-          "vertices": [
-            [
-              40,
-              86
-            ],
-            [
-              48,
-              97
-            ],
-            [
-              55,
-              91
-            ],
-            [
-              65,
-              97
-            ],
-            [
-              69,
-              90
-            ],
-            [
-              78,
-              97
-            ],
-            [
-              87,
-              83
-            ],
-            [
-              86,
-              40
-            ],
-            [
-              72.85124000503544,
-              29.45950399798583
-            ],
-            [
-              54.43305597180159,
-              29.932232009063775
-            ],
-            [
-              46,
-              32
-            ],
-            [
-              39,
-              44
-            ]
-          ]
+          "_fixture_id": "33",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 39.199726699396955,
+            "y": 28.631134745722903,
+            "w": 47.026166603723794,
+            "h": 68.16335051107188
+          }
         }
       ],
       "label": "ghost"
@@ -9621,60 +8995,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "282",
-          "vertices": [
-            [
-              38,
-              45
-            ],
-            [
-              39,
-              86
-            ],
-            [
-              48,
-              98
-            ],
-            [
-              55,
-              91
-            ],
-            [
-              61,
-              98
-            ],
-            [
-              69,
-              91
-            ],
-            [
-              78,
-              98
-            ],
-            [
-              87,
-              84
-            ],
-            [
-              86,
-              40
-            ],
-            [
-              72.80413199647518,
-              28.8041319964752
-            ],
-            [
-              54.05454397784411,
-              29.27686000755314
-            ],
-            [
-              47,
-              31
-            ]
-          ]
+          "_fixture_id": "34",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 38.855098700907575,
+            "y": 28.05675474824062,
+            "w": 47.71542260070254,
+            "h": 68.73773050855416
+          }
         }
       ],
       "label": "ghost_dead"
@@ -9696,60 +9027,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "434",
-          "vertices": [
-            [
-              40,
-              86
-            ],
-            [
-              48,
-              97
-            ],
-            [
-              56,
-              90
-            ],
-            [
-              62,
-              97
-            ],
-            [
-              69,
-              90
-            ],
-            [
-              78,
-              97
-            ],
-            [
-              86,
-              84
-            ],
-            [
-              85,
-              40
-            ],
-            [
-              74.06776799093623,
-              29.57437999748229
-            ],
-            [
-              52.67603198388663,
-              30.04710800856023
-            ],
-            [
-              47,
-              32
-            ],
-            [
-              39,
-              46
-            ]
-          ]
+          "_fixture_id": "36",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 39.888982696375706,
+            "y": 29.09063874370873,
+            "w": 45.18815061178047,
+            "h": 67.35921851459669
+          }
         }
       ],
       "label": "ghost_normal"
@@ -11915,6 +11203,96 @@
   },
   {
     "file": {
+      "relativePath": "gui/hud_Beige.png",
+      "uuid": "b72a936a-5370-4bdd-8ca2-ef0b3ea16a00",
+      "shortName": "hud_Beige"
+    },
+    "uuid": "b72a936a-5370-4bdd-8ca2-ef0b3ea16a00",
+    "shape": {
+      "_overlayScale": 0,
+      "_padding": {
+        "x": 0,
+        "y": 0
+      },
+      "bodyType": "DYNAMIC",
+      "fixtures": [],
+      "label": "hud_Beige"
+    }
+  },
+  {
+    "file": {
+      "relativePath": "gui/hud_Blue.png",
+      "uuid": "989866eb-cfa4-47cd-b79d-08d36342e4af",
+      "shortName": "hud_Blue"
+    },
+    "uuid": "989866eb-cfa4-47cd-b79d-08d36342e4af",
+    "shape": {
+      "_overlayScale": 0,
+      "_padding": {
+        "x": 0,
+        "y": 0
+      },
+      "bodyType": "DYNAMIC",
+      "fixtures": [],
+      "label": "hud_Blue"
+    }
+  },
+  {
+    "file": {
+      "relativePath": "gui/hud_Green.png",
+      "uuid": "a75109ee-4599-4b97-98e3-2b9abb200f4c",
+      "shortName": "hud_Green"
+    },
+    "uuid": "a75109ee-4599-4b97-98e3-2b9abb200f4c",
+    "shape": {
+      "_overlayScale": 0,
+      "_padding": {
+        "x": 0,
+        "y": 0
+      },
+      "bodyType": "DYNAMIC",
+      "fixtures": [],
+      "label": "hud_Green"
+    }
+  },
+  {
+    "file": {
+      "relativePath": "gui/hud_Pink.png",
+      "uuid": "575ab55c-6f25-40ac-8bf4-62744a5ce612",
+      "shortName": "hud_Pink"
+    },
+    "uuid": "575ab55c-6f25-40ac-8bf4-62744a5ce612",
+    "shape": {
+      "_overlayScale": 0,
+      "_padding": {
+        "x": 0,
+        "y": 0
+      },
+      "bodyType": "DYNAMIC",
+      "fixtures": [],
+      "label": "hud_Pink"
+    }
+  },
+  {
+    "file": {
+      "relativePath": "gui/hud_Yellow.png",
+      "uuid": "05daf53b-282d-45a1-823c-f440716198a8",
+      "shortName": "hud_Yellow"
+    },
+    "uuid": "05daf53b-282d-45a1-823c-f440716198a8",
+    "shape": {
+      "_overlayScale": 0,
+      "_padding": {
+        "x": 0,
+        "y": 0
+      },
+      "bodyType": "DYNAMIC",
+      "fixtures": [],
+      "label": "hud_Yellow"
+    }
+  },
+  {
+    "file": {
       "relativePath": "gui/hud_coins.png",
       "uuid": "14cd6c2b-98a8-4d7e-acf2-8ab3e8ad7b5b",
       "shortName": "hud_coins"
@@ -12275,114 +11653,6 @@
   },
   {
     "file": {
-      "relativePath": "gui/hud_p1.png",
-      "uuid": "2f73bf0e-dbf3-4046-98d1-3df6ce260382",
-      "shortName": "hud_p1"
-    },
-    "uuid": "2f73bf0e-dbf3-4046-98d1-3df6ce260382",
-    "shape": {
-      "_overlayScale": 0,
-      "_padding": {
-        "x": 0,
-        "y": 0
-      },
-      "bodyType": "DYNAMIC",
-      "fixtures": [],
-      "label": "hud_p1"
-    }
-  },
-  {
-    "file": {
-      "relativePath": "gui/hud_p1Alt.png",
-      "uuid": "ad786fc1-cf0f-49dd-8e45-7dd35ce70879",
-      "shortName": "hud_p1Alt"
-    },
-    "uuid": "ad786fc1-cf0f-49dd-8e45-7dd35ce70879",
-    "shape": {
-      "_overlayScale": 0,
-      "_padding": {
-        "x": 0,
-        "y": 0
-      },
-      "bodyType": "DYNAMIC",
-      "fixtures": [],
-      "label": "hud_p1Alt"
-    }
-  },
-  {
-    "file": {
-      "relativePath": "gui/hud_p2.png",
-      "uuid": "740f13f2-5b49-4080-9821-197124f12b37",
-      "shortName": "hud_p2"
-    },
-    "uuid": "740f13f2-5b49-4080-9821-197124f12b37",
-    "shape": {
-      "_overlayScale": 0,
-      "_padding": {
-        "x": 0,
-        "y": 0
-      },
-      "bodyType": "DYNAMIC",
-      "fixtures": [],
-      "label": "hud_p2"
-    }
-  },
-  {
-    "file": {
-      "relativePath": "gui/hud_p2Alt.png",
-      "uuid": "2991e5ee-00f6-4f5c-a3b3-ebfdc9cf7c6d",
-      "shortName": "hud_p2Alt"
-    },
-    "uuid": "2991e5ee-00f6-4f5c-a3b3-ebfdc9cf7c6d",
-    "shape": {
-      "_overlayScale": 0,
-      "_padding": {
-        "x": 0,
-        "y": 0
-      },
-      "bodyType": "DYNAMIC",
-      "fixtures": [],
-      "label": "hud_p2Alt"
-    }
-  },
-  {
-    "file": {
-      "relativePath": "gui/hud_p3.png",
-      "uuid": "712003ef-cb73-41d5-aff4-86be82ae168e",
-      "shortName": "hud_p3"
-    },
-    "uuid": "712003ef-cb73-41d5-aff4-86be82ae168e",
-    "shape": {
-      "_overlayScale": 0,
-      "_padding": {
-        "x": 0,
-        "y": 0
-      },
-      "bodyType": "DYNAMIC",
-      "fixtures": [],
-      "label": "hud_p3"
-    }
-  },
-  {
-    "file": {
-      "relativePath": "gui/hud_p3Alt.png",
-      "uuid": "8a54a322-a204-43e0-9ea7-9d8a04d7eedb",
-      "shortName": "hud_p3Alt"
-    },
-    "uuid": "8a54a322-a204-43e0-9ea7-9d8a04d7eedb",
-    "shape": {
-      "_overlayScale": 0,
-      "_padding": {
-        "x": 0,
-        "y": 0
-      },
-      "bodyType": "DYNAMIC",
-      "fixtures": [],
-      "label": "hud_p3Alt"
-    }
-  },
-  {
-    "file": {
       "relativePath": "gui/hud_x.png",
       "uuid": "3b06129b-97a3-4bb7-8074-3fb07526b877",
       "shortName": "hud_x"
@@ -12415,60 +11685,17 @@
       "bodyType": "STATIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "338",
-          "vertices": [
-            [
-              33,
-              53
-            ],
-            [
-              33,
-              67
-            ],
-            [
-              42.29751998992914,
-              78.26363599446103
-            ],
-            [
-              54.29751998992914,
-              77.31074400302126
-            ],
-            [
-              62,
-              65
-            ],
-            [
-              71,
-              65
-            ],
-            [
-              72,
-              78
-            ],
-            [
-              89,
-              78
-            ],
-            [
-              91,
-              55
-            ],
-            [
-              62,
-              55
-            ],
-            [
-              56,
-              44
-            ],
-            [
-              43.56115598439016,
-              41.3917360070496
-            ]
-          ]
+          "_fixture_id": "2",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 32.88154672709182,
+            "y": 41.956750687311924,
+            "w": 60.122030546319884,
+            "h": 36.11294665156037
+          }
         }
       ],
       "label": "keyBlue"
@@ -12490,60 +11717,17 @@
       "bodyType": "STATIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "339",
-          "vertices": [
-            [
-              33,
-              53
-            ],
-            [
-              33,
-              67
-            ],
-            [
-              42.52727198892205,
-              77.68925599697874
-            ],
-            [
-              54.4123959894256,
-              77.31074400302126
-            ],
-            [
-              62,
-              65
-            ],
-            [
-              71,
-              65
-            ],
-            [
-              72,
-              78
-            ],
-            [
-              89,
-              78
-            ],
-            [
-              91,
-              55
-            ],
-            [
-              62,
-              55
-            ],
-            [
-              56,
-              44
-            ],
-            [
-              44.48016398036182,
-              41.62148800604251
-            ]
-          ]
+          "_fixture_id": "4",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 32.99642272658828,
+            "y": 42.41625468529776,
+            "w": 59.89227854732698,
+            "h": 35.768318653071
+          }
         }
       ],
       "label": "keyGreen"
@@ -12565,60 +11749,17 @@
       "bodyType": "STATIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "340",
-          "vertices": [
-            [
-              33,
-              53
-            ],
-            [
-              33,
-              67
-            ],
-            [
-              42.29751998992914,
-              77.8041319964752
-            ],
-            [
-              53.72313999244685,
-              77.65537200151061
-            ],
-            [
-              62,
-              65
-            ],
-            [
-              71,
-              65
-            ],
-            [
-              72,
-              78
-            ],
-            [
-              89,
-              78
-            ],
-            [
-              91,
-              55
-            ],
-            [
-              62,
-              55
-            ],
-            [
-              56,
-              44
-            ],
-            [
-              42.98677598690787,
-              41.85124000503543
-            ]
-          ]
+          "_fixture_id": "6",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 32.88154672709182,
+            "y": 41.84187468781546,
+            "w": 59.77740254783052,
+            "h": 36.5724506495462
+          }
         }
       ],
       "label": "keyRed"
@@ -12640,60 +11781,17 @@
       "bodyType": "STATIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "341",
-          "vertices": [
-            [
-              33,
-              53
-            ],
-            [
-              33,
-              67
-            ],
-            [
-              42.64214798841851,
-              77.91900799597165
-            ],
-            [
-              53.95289199143977,
-              77.31074400302126
-            ],
-            [
-              62,
-              65
-            ],
-            [
-              71,
-              65
-            ],
-            [
-              72,
-              78
-            ],
-            [
-              89,
-              78
-            ],
-            [
-              91,
-              55
-            ],
-            [
-              62,
-              55
-            ],
-            [
-              56,
-              44
-            ],
-            [
-              42.871899987411425,
-              42.310744003021256
-            ]
-          ]
+          "_fixture_id": "8",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 32.766670727595354,
+            "y": 41.956750687311924,
+            "w": 59.89227854732698,
+            "h": 35.99807065206391
+          }
         }
       ],
       "label": "keyYellow"
@@ -15508,64 +14606,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "435",
-          "vertices": [
-            [
-              39,
-              63
-            ],
-            [
-              36,
-              70
-            ],
-            [
-              28,
-              73
-            ],
-            [
-              36,
-              83
-            ],
-            [
-              82,
-              84
-            ],
-            [
-              95,
-              74
-            ],
-            [
-              95,
-              60
-            ],
-            [
-              85,
-              72
-            ],
-            [
-              76,
-              60
-            ],
-            [
-              58,
-              54
-            ],
-            [
-              45,
-              43
-            ],
-            [
-              40,
-              43
-            ],
-            [
-              33,
-              55
-            ]
-          ]
+          "_fixture_id": "38",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 29.090638743708737,
+            "y": 43.33526268126941,
+            "w": 66.7848385171144,
+            "h": 39.32947463746116
+          }
         }
       ],
       "label": "mouse"
@@ -15587,60 +14638,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "436",
-          "vertices": [
-            [
-              33,
-              55
-            ],
-            [
-              39,
-              62
-            ],
-            [
-              28,
-              73
-            ],
-            [
-              37,
-              82
-            ],
-            [
-              83,
-              82
-            ],
-            [
-              93,
-              74
-            ],
-            [
-              94,
-              59
-            ],
-            [
-              84,
-              71
-            ],
-            [
-              75,
-              59
-            ],
-            [
-              57,
-              53
-            ],
-            [
-              44,
-              42
-            ],
-            [
-              40,
-              42
-            ]
-          ]
+          "_fixture_id": "40",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 28.631134745722903,
+            "y": 42.760882683787116,
+            "w": 66.44021051862504,
+            "h": 38.180714642496596
+          }
         }
       ],
       "label": "mouse_dead"
@@ -15662,60 +14670,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "437",
-          "vertices": [
-            [
-              30,
-              54
-            ],
-            [
-              37,
-              63
-            ],
-            [
-              28,
-              73
-            ],
-            [
-              36,
-              82
-            ],
-            [
-              82,
-              83
-            ],
-            [
-              95,
-              73
-            ],
-            [
-              97,
-              61
-            ],
-            [
-              92,
-              60
-            ],
-            [
-              84,
-              71
-            ],
-            [
-              70,
-              52
-            ],
-            [
-              43,
-              41
-            ],
-            [
-              38,
-              41
-            ]
-          ]
+          "_fixture_id": "42",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 29.32039074270165,
+            "y": 41.497246689326104,
+            "w": 67.24434251510023,
+            "h": 40.82286263091512
+          }
         }
       ],
       "label": "mouse_walk"
@@ -15773,80 +14738,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "438",
-          "vertices": [
-            [
-              44,
-              44
-            ],
-            [
-              37,
-              47
-            ],
-            [
-              42,
-              70
-            ],
-            [
-              55,
-              77
-            ],
-            [
-              49,
-              86
-            ],
-            [
-              63,
-              97
-            ],
-            [
-              73,
-              86
-            ],
-            [
-              67,
-              77
-            ],
-            [
-              82,
-              75
-            ],
-            [
-              88,
-              50
-            ],
-            [
-              80,
-              48
-            ],
-            [
-              76,
-              37
-            ],
-            [
-              67,
-              30
-            ],
-            [
-              54,
-              30
-            ],
-            [
-              53,
-              42
-            ],
-            [
-              48,
-              38
-            ],
-            [
-              45,
-              38
-            ]
-          ]
+          "_fixture_id": "44",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 37.59146270644655,
+            "y": 29.89477074018394,
+            "w": 49.09393459466001,
+            "h": 66.09558252013565
+          }
         }
       ],
       "label": "piranha"
@@ -15868,76 +14770,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "439",
-          "vertices": [
-            [
-              49,
-              39
-            ],
-            [
-              55,
-              49
-            ],
-            [
-              42,
-              54
-            ],
-            [
-              37,
-              73
-            ],
-            [
-              37,
-              80
-            ],
-            [
-              46,
-              89
-            ],
-            [
-              51,
-              84
-            ],
-            [
-              57,
-              97
-            ],
-            [
-              73,
-              93
-            ],
-            [
-              79,
-              79
-            ],
-            [
-              88,
-              76
-            ],
-            [
-              82,
-              50
-            ],
-            [
-              67,
-              49
-            ],
-            [
-              74,
-              40
-            ],
-            [
-              63,
-              29
-            ],
-            [
-              59,
-              29
-            ]
-          ]
+          "_fixture_id": "46",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 35.638570715006786,
+            "y": 29.09063874370873,
+            "w": 51.391454584589155,
+            "h": 67.58897051358962
+          }
         }
       ],
       "label": "piranha_dead"
@@ -15959,72 +14802,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "440",
-          "vertices": [
-            [
-              50,
-              39
-            ],
-            [
-              55,
-              49
-            ],
-            [
-              43,
-              53
-            ],
-            [
-              37,
-              74
-            ],
-            [
-              45,
-              88
-            ],
-            [
-              55,
-              86
-            ],
-            [
-              54,
-              96
-            ],
-            [
-              72,
-              94
-            ],
-            [
-              79,
-              79
-            ],
-            [
-              88,
-              76
-            ],
-            [
-              83,
-              51
-            ],
-            [
-              67,
-              49
-            ],
-            [
-              74,
-              40
-            ],
-            [
-              63,
-              29
-            ],
-            [
-              60,
-              29
-            ]
-          ]
+          "_fixture_id": "48",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 37.13195870846073,
+            "y": 29.665018741191027,
+            "w": 50.70219858761042,
+            "h": 66.55508651812148
+          }
         }
       ],
       "label": "piranha_down"
@@ -17355,32 +16143,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "466",
-          "vertices": [
-            [
-              30,
-              98
-            ],
-            [
-              96,
-              98
-            ],
-            [
-              74.48016398036182,
-              85.26363599446103
-            ],
-            [
-              52,
-              84
-            ],
-            [
-              38.14875999496457,
-              90.68925599697874
-            ]
-          ]
+          "_fixture_id": "50",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 32.766670727595354,
+            "y": 84.69062249999394,
+            "w": 61.960046538263185,
+            "h": 13.36749875126187
+          }
         }
       ],
       "label": "slimeDead"
@@ -17402,36 +16175,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "467",
-          "vertices": [
-            [
-              31,
-              82
-            ],
-            [
-              32,
-              98
-            ],
-            [
-              96,
-              98
-            ],
-            [
-              74,
-              65
-            ],
-            [
-              55.020659982375996,
-              61.54049600201417
-            ],
-            [
-              42,
-              66
-            ]
-          ]
+          "_fixture_id": "52",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 30.469150737666215,
+            "y": 62.17492659868836,
+            "w": 63.45343453171714,
+            "h": 34.96418665659579
+          }
         }
       ],
       "label": "slimeWalk1"
@@ -17453,36 +16207,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "468",
-          "vertices": [
-            [
-              30,
-              83
-            ],
-            [
-              32,
-              98
-            ],
-            [
-              96,
-              98
-            ],
-            [
-              71,
-              68
-            ],
-            [
-              49,
-              65
-            ],
-            [
-              39,
-              69
-            ]
-          ]
+          "_fixture_id": "54",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 31.50303473313434,
+            "y": 65.16170258559625,
+            "w": 62.87905453423487,
+            "h": 32.666666666666664
+          }
         }
       ],
       "label": "slimeWalk2"
@@ -17504,56 +16239,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "469",
-          "vertices": [
-            [
-              31.033883995468113,
-              74.35785201158149
-            ],
-            [
-              29.766730930888727,
-              86.31982649549609
-            ],
-            [
-              32.86838291729307,
-              93.21238646528352
-            ],
-            [
-              42.45371595417759,
-              97.33140398539724
-            ],
-            [
-              83.68925599697874,
-              97.08099200402833
-            ],
-            [
-              95,
-              93
-            ],
-            [
-              94,
-              75
-            ],
-            [
-              83,
-              60
-            ],
-            [
-              70,
-              54
-            ],
-            [
-              56,
-              54
-            ],
-            [
-              42.22975199899291,
-              60.80413199647519
-            ]
-          ]
+          "_fixture_id": "56",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 30.00964673968039,
+            "y": 55.16749062940447,
+            "w": 64.83194652567462,
+            "h": 41.51211862789385
+          }
         }
       ],
       "label": "snailShell"
@@ -17575,44 +16271,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "470",
-          "vertices": [
-            [
-              32,
-              81
-            ],
-            [
-              52,
-              98
-            ],
-            [
-              77,
-              97
-            ],
-            [
-              95,
-              75
-            ],
-            [
-              95,
-              61
-            ],
-            [
-              85,
-              56
-            ],
-            [
-              51,
-              55
-            ],
-            [
-              30.50661200654606,
-              61.37851199395748
-            ]
-          ]
+          "_fixture_id": "58",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 30.92865473565205,
+            "y": 55.16749062940448,
+            "w": 63.798062530206515,
+            "h": 42.431126623865495
+          }
         }
       ],
       "label": "snailShell_upsidedown"
@@ -17634,60 +16303,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "471",
-          "vertices": [
-            [
-              36,
-              84
-            ],
-            [
-              34,
-              98
-            ],
-            [
-              94,
-              97
-            ],
-            [
-              92,
-              76
-            ],
-            [
-              78,
-              62
-            ],
-            [
-              57,
-              64
-            ],
-            [
-              47,
-              79
-            ],
-            [
-              42.632842874491914,
-              67.13553457958777
-            ],
-            [
-              38.966116004531884,
-              68.37851199395749
-            ],
-            [
-              42,
-              83
-            ],
-            [
-              34,
-              70
-            ],
-            [
-              30,
-              70
-            ]
-          ]
+          "_fixture_id": "60",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 30.00964673968039,
+            "y": 62.519554597177724,
+            "w": 63.568310531213605,
+            "h": 34.96418665659581
+          }
         }
       ],
       "label": "snailWalk1"
@@ -17709,64 +16335,17 @@
       "bodyType": "DYNAMIC",
       "fixtures": [
         {
-          "shapeType": "MAGIC",
+          "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "472",
-          "vertices": [
-            [
-              37,
-              85
-            ],
-            [
-              32,
-              98
-            ],
-            [
-              96,
-              98
-            ],
-            [
-              93,
-              73
-            ],
-            [
-              80,
-              62
-            ],
-            [
-              60,
-              64
-            ],
-            [
-              52,
-              72
-            ],
-            [
-              50,
-              85
-            ],
-            [
-              42,
-              67
-            ],
-            [
-              38,
-              72
-            ],
-            [
-              43,
-              85
-            ],
-            [
-              33,
-              72
-            ],
-            [
-              30,
-              72
-            ]
-          ]
+          "_fixture_id": "62",
+          "chamfer": 0,
+          "rectangle": {
+            "x": 30.124522739176847,
+            "y": 61.71542260070254,
+            "w": 65.29145052366046,
+            "h": 35.768318653071006
+          }
         }
       ],
       "label": "snailWalk2"
@@ -17791,10 +16370,10 @@
           "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "474",
+          "_fixture_id": "63",
           "chamfer": 0,
           "rectangle": {
-            "x": 37.70633870594301,
+            "x": 38.16584270392883,
             "y": 57.26226949144582,
             "w": 50.12781859012813,
             "h": 139.54322900804456
@@ -17823,7 +16402,7 @@
           "shapeType": "RECTANGLE",
           "isSensor": true,
           "label": "",
-          "_fixture_id": "476",
+          "_fixture_id": "64",
           "chamfer": 0,
           "rectangle": {
             "x": 37.4765867069501,
@@ -17855,7 +16434,7 @@
           "shapeType": "RECTANGLE",
           "isSensor": false,
           "label": "",
-          "_fixture_id": "477",
+          "_fixture_id": "65",
           "chamfer": 0,
           "rectangle": {
             "x": 37.4765867069501,
@@ -19110,6 +17689,156 @@
       "bodyType": "DYNAMIC",
       "fixtures": [],
       "label": "tochLit2"
+    }
+  },
+  {
+    "file": {
+      "relativePath": "colectables/tokenBeige.png",
+      "uuid": "4385268d-ed8b-49d1-bf41-3cd42e4fbe55",
+      "shortName": "tokenBeige"
+    },
+    "uuid": "4385268d-ed8b-49d1-bf41-3cd42e4fbe55",
+    "shape": {
+      "_overlayScale": 8.705102040816326,
+      "_padding": {
+        "x": 28,
+        "y": 28
+      },
+      "bodyType": "STATIC",
+      "fixtures": [
+        {
+          "shapeType": "CIRCLE",
+          "isSensor": true,
+          "label": "",
+          "_fixture_id": "1",
+          "circle": {
+            "x": 62.77024800100709,
+            "y": 62.310744003021256,
+            "radius": 23.690006661537605
+          }
+        }
+      ],
+      "label": "tokenBeige"
+    }
+  },
+  {
+    "file": {
+      "relativePath": "colectables/tokenBlue.png",
+      "uuid": "ca2b689f-62f7-4d1b-854a-736cacdcba07",
+      "shortName": "tokenBlue"
+    },
+    "uuid": "ca2b689f-62f7-4d1b-854a-736cacdcba07",
+    "shape": {
+      "_overlayScale": 8.705102040816326,
+      "_padding": {
+        "x": 28,
+        "y": 28
+      },
+      "bodyType": "STATIC",
+      "fixtures": [
+        {
+          "shapeType": "CIRCLE",
+          "isSensor": true,
+          "label": "",
+          "_fixture_id": "2",
+          "circle": {
+            "x": 62.88512400050355,
+            "y": 62.77024800100709,
+            "radius": 23.578119429052148
+          }
+        }
+      ],
+      "label": "tokenBlue"
+    }
+  },
+  {
+    "file": {
+      "relativePath": "colectables/tokenGreen.png",
+      "uuid": "6297a971-01c6-4e27-a016-a7543c282179",
+      "shortName": "tokenGreen"
+    },
+    "uuid": "6297a971-01c6-4e27-a016-a7543c282179",
+    "shape": {
+      "_overlayScale": 8.705102040816326,
+      "_padding": {
+        "x": 28,
+        "y": 28
+      },
+      "bodyType": "STATIC",
+      "fixtures": [
+        {
+          "shapeType": "CIRCLE",
+          "isSensor": true,
+          "label": "",
+          "_fixture_id": "3",
+          "circle": {
+            "x": 62.77024800100709,
+            "y": 62.42562000251771,
+            "radius": 24.031123608359707
+          }
+        }
+      ],
+      "label": "tokenGreen"
+    }
+  },
+  {
+    "file": {
+      "relativePath": "colectables/tokenPink.png",
+      "uuid": "c1595a89-12f4-41d4-ad97-e4d9b5b0a272",
+      "shortName": "tokenPink"
+    },
+    "uuid": "c1595a89-12f4-41d4-ad97-e4d9b5b0a272",
+    "shape": {
+      "_overlayScale": 8.705102040816326,
+      "_padding": {
+        "x": 28,
+        "y": 28
+      },
+      "bodyType": "STATIC",
+      "fixtures": [
+        {
+          "shapeType": "CIRCLE",
+          "isSensor": true,
+          "label": "",
+          "_fixture_id": "4",
+          "circle": {
+            "x": 62.54049600201417,
+            "y": 62.655372001510635,
+            "radius": 23.573040594861723
+          }
+        }
+      ],
+      "label": "tokenPink"
+    }
+  },
+  {
+    "file": {
+      "relativePath": "colectables/tokenYellow.png",
+      "uuid": "c02867cf-20c5-4b06-a0f8-8b8f672a0a3e",
+      "shortName": "tokenYellow"
+    },
+    "uuid": "c02867cf-20c5-4b06-a0f8-8b8f672a0a3e",
+    "shape": {
+      "_overlayScale": 8.705102040816326,
+      "_padding": {
+        "x": 28,
+        "y": 28
+      },
+      "bodyType": "STATIC",
+      "fixtures": [
+        {
+          "shapeType": "CIRCLE",
+          "isSensor": true,
+          "label": "",
+          "_fixture_id": "5",
+          "circle": {
+            "x": 62.77024800100709,
+            "y": 62.77024800100709,
+            "radius": 23.915425200930663
+          }
+        }
+      ],
+      "label": "tokenYellow"
     }
   },
   {

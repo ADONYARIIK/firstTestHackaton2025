@@ -59,6 +59,7 @@
             "scaleInDock": 1
         },
         "maps/testLevel.json#blocks": {
+            "dynamicWrapping": false,
             "scaleInDock": 0.5,
             "scaleInEditor": 1
         },
@@ -70,6 +71,7 @@
             "scaleInEditor": 1
         },
         "maps/tilesets/test/tileset_blocks.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
@@ -103,7 +105,7 @@
         "maps/tilesets/test/tileset_background.tsx"
     ],
     "project": "TestGame.tiled-project",
-    "property.type": "bool",
+    "property.type": "string",
     "recentFiles": [
         "maps/tilesets/test/tileset_background.tsx",
         "maps/tilesets/test/tileset_decor.tsx",
