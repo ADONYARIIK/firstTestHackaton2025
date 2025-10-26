@@ -1,33 +1,35 @@
-import { createSprite, createNormalMapSprite, createPhysicsSprite, createNormalMapPhysicsSprite, createCharacterWithAnimations } from './createHelper.js';
+import { createSprite, createNormalMapSprite, createPhysicsSprite, createNormalMapPhysicsSprite, createPlayer } from './createHelper.js';
 
 export function loadTiledObjects(scene, map) {
-    const objectsLayer = map.getObjectLayer('Objects').objects;
+    const objectsLayer = map.getObjectLayer('Entities').objects;
     const objects = {};
 
     objectsLayer.forEach(obj => {
-        const { name, type, bodyType, sensor, normalMap } = obj.properties.reduce((acc, prop) => {
+        const { name, type, bodyType, sensor, normalMap, value } = obj.properties.reduce((acc, prop) => {
             acc[prop.name] = prop.value;
             return acc;
         }, {});
 
-        if (type === 'character') {
-            objects[name] = scene.createCharacterWithAnimations(obj.x, obj.y, 'sprites', name);
-            objects[name].setPipeline('Light2D');
-        } else if (normalMap && bodyType !== 'none') {
-            objects[name] = scene.createNormalMapPhysicsSprite(obj.x, obj.y, 'sprites', name);
-            objects[name].setPipeline('Light2D');
-        } else if (bodyType !== 'none') {
-            objects[name] = scene.createPhysicsSprite(obj.x, obj.y, 'sprites', name);
-        } else if (normalMap) {
-            objects[name] = scene.createNormalMapSprite(obj.x, obj.y, 'sprites', name);
-            objects[name].setPipeline('Light2D');
-        } else {
-            objects[name] = scene.createSprite(obj.x, obj.y, 'sprites', name);
-        }
+        let entity;
+
+        // if (type === 'player') {
+        //     entity = createPlayer(scene, obj.x, obj.y, 'sprites', name);
+        // } else if (normalMap && bodyType !== 'none') {
+        //     entity = createNormalMapPhysicsSprite(scene, obj.x, obj.y, 'sprites', name);
+        // } else if (bodyType !== 'none') {
+        //     entity = createPhysicsSprite(scene, obj.x, obj.y, 'sprites', name);
+        // } else if (normalMap) {
+        //     entity = createNormalMapSprite(scene, obj.x, obj.y, 'sprites', name);
+        // } else {
+        //     entity = createSprite(scene, obj.x, obj.y, 'sprites', name);
+        // }
 
         // Дополнительные настройки
-        if (sensor) objects[name].setSensor(true);
-        if (bodyType === 'static') objects[name].setStatic(true);
+        // if (entity.setSensor && sensor) { entity.setSensor(true) };
+        // if (entity.setStatic && bodyType === 'static') { entity.setStatic(true) };
+        // if (value !== undefined) { entity.value = value };
+
+        objects[name] = entity;
     });
 
     return objects;

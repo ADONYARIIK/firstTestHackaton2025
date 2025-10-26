@@ -1,16 +1,20 @@
-export function createSprite(x, y, atlas, name) {
-    const sprite = this.add.sprite(x, y, atlas, `${name}.png`);
+export function createSprite(scene, x, y, atlas, name) {
+    const sprite = scene.add.sprite(x, y, atlas, `${name}.png`);
 
     return sprite;
 }
 
-export function createNormalMapSprite(x, y, atlas, name) {
-    const sprite = this.add.sprite(x, y, atlas, `${name}.png`);
-    const normalFrame = this.textures.getFrame(`${atlas}_n`, `${name}_n.png`);
+export function createNormalMapSprite(scene, x, y, atlas, name) {
+    const sprite = scene.add.sprite(x, y, atlas, `${name}.png`);
+    const normalFrame = scene.textures.getFrame(`${atlas}_n`, `${name}_n.png`);
     sprite.setPipeline('Light2D');
 
     if (normalFrame) {
-        sprite.setNormalMap(normalFrame);
+        if (sprite.setNormalMap) {
+            sprite.setNormalMap(normalFrame);
+        } else {
+            console.warn(`⚠️ Normal map not applied for ${name}_n.png`);
+        }
     } else {
         console.warn(`⚠️ Normal map not found for ${name}_n.png`);
     }
@@ -18,117 +22,156 @@ export function createNormalMapSprite(x, y, atlas, name) {
     return sprite;
 }
 
-export function createPhysicsSprite(x, y, atlas, name) {
-    //Загружаем данные форм из кэша
-    const shapesData = this.cache.json.get("shapes");
+export function createPhysicsSprite(scene, x, y, atlas, name) {
+    const shapesData = scene.cache.json.get("shapes");
     const shapeData = shapesData?.shapes?.[name];
 
     const options = { label: name };
 
-    //Создание коллайдера
     if (shapeData && shapeData.fixtures?.length > 0) {
         const fixture = shapeData.fixtures[0];
 
+        // POLYGON или MAGIC
         if (fixture.shapeType === "POLYGON" || fixture.shapeType === "MAGIC") {
-            //Собираем все полигоны (каждый из которых массив точек)
             const verts = fixture.vertices.map(polygon =>
                 polygon.map(v => ({ x: v.x, y: v.y }))
             );
-
-            //В Phaser Matter используется fromVerts для сложных форм
             options.shape = { type: "fromVerts", verts };
         }
+
+        // RECTANGLE
+        else if (fixture.shapeType === "RECTANGLE") {
+            const rect = fixture.rectangle;
+            options.vertices = [
+                { x: rect.x, y: rect.y },
+                { x: rect.x + rect.w, y: rect.y },
+                { x: rect.x + rect.w, y: rect.y + rect.h },
+                { x: rect.x, y: rect.y + rect.h }
+            ];
+        }
+
+        // CIRCLE
         else if (fixture.shapeType === "CIRCLE") {
-            options.circleRadius = fixture.radius || fixture.vertices?.[0]?.[0] || 10;
+            options.circleRadius = fixture.radius || 10;
         }
     }
 
-    //Создаём физический спрайт
-    const sprite = this.matter.add.sprite(x, y, atlas, `${name}.png`, options);
+    // Создаём физическое тело
+    const sprite = scene.matter.add.sprite(x, y, atlas, `${name}.png`, options);
 
-    //Возврат готового спрайта
     return sprite;
 }
 
-export function createNormalMapPhysicsSprite(x, y, atlas, name) {
-    //Загружаем данные форм из кэша
-    const shapesData = this.cache.json.get("shapes");
+export function createNormalMapPhysicsSprite(scene, x, y, atlas, name) {
+    const shapesData = scene.cache.json.get("shapes");
     const shapeData = shapesData?.shapes?.[name];
 
     const options = { label: name };
 
-    //Создание коллайдера
     if (shapeData && shapeData.fixtures?.length > 0) {
         const fixture = shapeData.fixtures[0];
 
+        // POLYGON или MAGIC
         if (fixture.shapeType === "POLYGON" || fixture.shapeType === "MAGIC") {
-            //Собираем все полигоны (каждый из которых массив точек)
             const verts = fixture.vertices.map(polygon =>
                 polygon.map(v => ({ x: v.x, y: v.y }))
             );
-
-            //В Phaser Matter используется fromVerts для сложных форм
             options.shape = { type: "fromVerts", verts };
         }
+
+        // RECTANGLE
+        else if (fixture.shapeType === "RECTANGLE") {
+            const rect = fixture.rectangle;
+            options.vertices = [
+                { x: rect.x, y: rect.y },
+                { x: rect.x + rect.w, y: rect.y },
+                { x: rect.x + rect.w, y: rect.y + rect.h },
+                { x: rect.x, y: rect.y + rect.h }
+            ];
+        }
+
+        // CIRCLE
         else if (fixture.shapeType === "CIRCLE") {
-            options.circleRadius = fixture.radius || fixture.vertices?.[0]?.[0] || 10;
+            options.circleRadius = fixture.radius || 10;
         }
     }
 
-    //Создаём физический спрайт
-    const sprite = this.matter.add.sprite(x, y, atlas, `${name}.png`, options);
-    sprite.setPipeline("Light2D");
+    // создаём тело
+    const body = scene.matter.add.sprite(x, y, atlas, `${name}.png`, options);
+    body.setVisible(false);
 
-    //Проверяем и подключаем карту нормалей
-    const normalFrame = this.textures.getFrame(`${atlas}_n`, `${name}_n.png`);
-    if (normalFrame) {
-        sprite.setNormalMap(normalFrame);
-    } else {
-        console.warn(`⚠️ Normal map not found for ${name}_n.png`);
+    const sprite = createNormalMapSprite(scene, x, y, atlas, name);
+
+    scene.events.on('update', () => {
+        sprite.x = body.x;
+        sprite.y = body.y;
+        sprite.rotation = body.rotation;
+    });
+
+    sprite.playAnimation = (key) => {
+        if (scene.anims.exists(key)) {
+            sprite.anims.play(key, true);
+        } else {
+            console.warn(`⚠️ Animation ${key} not found`);
+        }
     }
 
-    return sprite;
+    const combined = {
+        sprite,
+        body,
+        setPosition: (x, y) => {
+            body.setPosition(x, y);
+            sprite.setPosition(x, y);
+        },
+        play: (key) => sprite.playAnimation(key),
+        setVisible: (v) => sprite.setVisible(v),
+        setStatic: (v) => body.setStatic(v),
+        setSensor: (v) => body.setSensor(v),
+        setVelocity: (x, y) => body.setVelocity(x, y),
+    };
+
+    return combined;
 }
 
-export function createCharacterWithAnimations(x, y, atlas, name) {
-    const character = this.createNormalMapPhysicsSprite(x, y, atlas, `alien${name}`);
+export function createPlayer(scene, x, y, atlas, name) {
+    const character = scene.createNormalMapPhysicsSprite(scene, x, y, atlas, `alien${name}`);
 
-    if (!this.anims.exists(`${name}_stand`)) {
-        this.anims.create({
+    if (!scene.anims.exists(`${name}_stand`)) {
+        scene.anims.create({
             key: `${name}_stand`,
             frames: [{ key: atlas, frame: `alien${name}_stand.png` }],
             frameRate: 1
         });
     }
 
-    if (!this.anims.exists(`${name}_duck`)) {
-        this.anims.create({
+    if (!scene.anims.exists(`${name}_duck`)) {
+        scene.anims.create({
             key: `${name}_duck`,
             frames: [{ key: atlas, frame: `alien${name}_duck.png` }],
             frameRate: 1
         });
     }
 
-    if (!this.anims.exists(`${name}_jump`)) {
-        this.anims.create({
+    if (!scene.anims.exists(`${name}_jump`)) {
+        scene.anims.create({
             key: `${name}_jump`,
             frames: [{ key: atlas, frame: `alien${name}_jump.png` }],
             frameRate: 1
         });
     }
 
-    if (!this.anims.exists(`${name}_hurt`)) {
-        this.anims.create({
+    if (!scene.anims.exists(`${name}_hurt`)) {
+        scene.anims.create({
             key: `${name}_hurt`,
             frames: [{ key: atlas, frame: `alien${name}_hurt.png` }],
             frameRate: 1
         });
     }
 
-    if (!this.anims.exists(`${name}_walk`)) {
-        this.anims.create({
+    if (!scene.anims.exists(`${name}_walk`)) {
+        scene.anims.create({
             key: `${name}_walk`,
-            frames: this.anims.generateFrameNames(atlas, {
+            frames: scene.anims.generateFrameNames(atlas, {
                 prefix: `alien${name}_walk`,
                 start: 1,
                 end: 2,
@@ -139,10 +182,10 @@ export function createCharacterWithAnimations(x, y, atlas, name) {
         });
     }
 
-    if (!this.anims.exists(`${name}_climb`)) {
-        this.anims.create({
+    if (!scene.anims.exists(`${name}_climb`)) {
+        scene.anims.create({
             key: `${name}_climb`,
-            frames: this.anims.generateFrameNames(atlas, {
+            frames: scene.anims.generateFrameNames(atlas, {
                 prefix: `alien${name}_climb`,
                 start: 1,
                 end: 2,
@@ -153,10 +196,10 @@ export function createCharacterWithAnimations(x, y, atlas, name) {
         });
     }
 
-    if (!this.anims.exists(`${name}_swim`)) {
-        this.anims.create({
+    if (!scene.anims.exists(`${name}_swim`)) {
+        scene.anims.create({
             key: `${name}_swim`,
-            frames: this.anims.generateFrameNames(atlas, {
+            frames: scene.anims.generateFrameNames(atlas, {
                 prefix: `alien${name}_swim`,
                 start: 1,
                 end: 2,
