@@ -18,8 +18,8 @@ export default class BootScene extends Phaser.Scene {
         this.load.start();
 
         this.load.on('complete', () => {
-            this.scene.start('MainMenuScene');
-            // this.scene.start('GameScene');
+            // this.scene.start('MainMenuScene');
+            this.scene.start('GameScene');
         });
     }
 
@@ -27,7 +27,6 @@ export default class BootScene extends Phaser.Scene {
         //atlases
         this.load.atlas('gui', './src/assets/atlas/gui_spritesheet.png', './src/assets/atlas/gui_spritesheet.json');
         this.load.atlas('sprites', './src/assets/atlas/spritesheet.png', './src/assets/atlas/spritesheet.json');
-        this.load.atlas('sprites_n', './src/assets/atlas/spritesheet_n.png', './src/assets/atlas/spritesheet_n.json');
         //fonts
         this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
         //levelmaps

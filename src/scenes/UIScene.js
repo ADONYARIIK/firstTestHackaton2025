@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import {} from '../utils/animations.js';
+import { } from '../utils/animations.js';
 
 export default class UIScene extends Phaser.Scene {
     constructor() {
@@ -7,20 +7,19 @@ export default class UIScene extends Phaser.Scene {
     }
 
     create() {
-        this.playerGAlt = this.add.image(25, 25, 'gui', 'hud_p1Alt.png');
-        this.playerG = this.add.image(25, 25, 'gui', 'hud_p1.png');
-        this.playerBAlt = this.add.image(75, 25, 'gui', 'hud_p2Alt.png');
-        this.playerB = this.add.image(75, 25, 'gui', 'hud_p2.png');
-        this.playerPAlt = this.add.image(125, 25, 'gui', 'hud_p3Alt.png');
-        this.playerP = this.add.image(125, 25, 'gui', 'hud_p3.png');
+        this.playerPink = this.add.image(25, 25, 'gui', 'hud_Pink.png');
+        this.playerGreen = this.add.image(75, 25, 'gui', 'hud_Green.png');
+        this.playerBlue = this.add.image(125, 25, 'gui', 'hud_Blue.png');
+        this.playerBeige = this.add.image(175, 25, 'gui', 'hud_Beige.png');
+        this.playerYellow = this.add.image(225, 25, 'gui', 'hud_Yellow.png');
         this.keyBlue = this.add.image(25, 75, 'gui', 'hud_keyBlue_disabled.png').setScale(0.7);
         this.keyGreen = this.add.image(60, 75, 'gui', 'hud_keyGreem_disabled.png').setScale(0.7);
         this.keyYellow = this.add.image(95, 75, 'gui', 'hud_keyYellow_disabled.png').setScale(0.7);
         this.keyRed = this.add.image(130, 75, 'gui', 'hud_keyRed_disabled.png').setScale(0.7);
         this.hearts = [];
         const spacing = 1; // расстояние между элементами
-        const startX = 180;  // начальная позиция по X
-        const startY = 35;  // позиция по Y
+        const startX = 300;  // начальная позиция по X
+        const startY = 25;  // позиция по Y
         for (let i = 0; i < 3; i++) {
             const x = startX + i * (30 + spacing); // 32 = ширина спрайта (пример)
             this.heart = this.add.image(x, startY, 'gui', 'hud_heartFull.png').setScale(0.5);
