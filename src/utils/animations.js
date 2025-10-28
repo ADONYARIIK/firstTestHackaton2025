@@ -64,3 +64,4 @@ export function playerAnimations(scene, atlas, name) {
         repeat: -1
     })
 }
+

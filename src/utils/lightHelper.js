@@ -1,5 +1,5 @@
 export function setupLights(scene, map) {
-    scene.lights.enable().setAmbientColor(0x000);
+    scene.lights.enable().setAmbientColor(0x000000);
 
     const lightsLayer = map.getObjectLayer('Lights').objects;
     const lights = {};
@@ -10,15 +10,15 @@ export function setupLights(scene, map) {
             return acc;
         }, {});
 
+        // let objLights = [];
         let light;
-
         if (obj.name === 'Torch') {
-            light = createTorchLight(scene, obj.x + obj.width / 2, obj.y + obj.height / 2);
+            /*objLights*/light = /*[*/createTorchLight(scene, obj.x + obj.width / 2, obj.y + obj.height / 2)/*]*/;
         } else if (obj.name === 'Lava') {
-            light = createLavaLight(scene, obj.x + obj.width / 2, obj.y + obj.height / 1, obj.width);
+            /*objLights*/light = createLavaLight(scene, obj.x + obj.width / 2, obj.y + obj.height / 2, obj.width);
         }
 
-        lights[obj.name] = light;
+        lights[obj.name] = light/*objLights*/;
     });
 
     return lights;
@@ -54,21 +54,53 @@ function createTorchLight(scene, x, y) {
     return light;
 }
 
-function createLavaLight(scene, x, y, width = 300) {
-    const light = scene.lights.addLight(x, y, width * 0.4, 0xff3300, 0.5);
+function createLavaLight(scene, x, y, width) {
+    // const spacing = 70;
+    // const count = width / spacing;
+    // const lights = [];
+
+    // for (let i = 0; i < count; i++) {
+    //     const lx = x + i * spacing + spacing / 2;
+    const light = scene.lights.addLight(/*l*/x, y, /*spacing * 1.5*/width * 0.4, 0xff3300, 0.5);
+    // lights.push(light);
 
     const duration = Phaser.Math.Between(1500, 4000);
     const delay = Phaser.Math.Between(0, 1000);
 
     scene.tweens.add({
         targets: light,
-        radius: { from: width * 0.35, to: width * 0.45 },
+        radius: { from: /*spacing * 1.35*/width * 0.35, to: /*spacing * 1.65*/width * 0.45 },
         intensity: { from: 0.45, to: 0.55 },
         duration: duration,
-        yoyo: delay,
+        yoyo: true,
         repeat: -1,
+        delay: delay,
         ease: 'Sine.easeInOut'
     });
+    // }
 
-    return light;
+    scene.time.addEvent({
+        delay: 200,
+        loop: true,
+        callback: () => {
+            // lights.forEach(light => {
+            light.intensity = Phaser.Math.FloatBetween(0.4, 0.6);
+            // });
+        }
+    });
+
+    // scene.time.addEvent({
+    //     delay: 100,
+    //     loop: true,
+    //     callback: () => {
+    //         const t = scene.time.now * 0.002;
+    //         lights.forEach((light, i) => {
+    //             const wave = Math.sin(t + i * 0.5);
+    //             light.intensity = 0.5 + wave * 0.1;
+    //             light.radius = 120 + wave * 20;
+    //         });
+    //     }
+    // });
+
+    return light/*s*/;
 }

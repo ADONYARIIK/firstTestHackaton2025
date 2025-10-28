@@ -171,30 +171,6 @@ export default class UIScene extends Phaser.Scene {
         if (Phaser.Input.Keyboard.JustDown(this.keyOne)) {
             this.changePoints();
         }
-        //над логикой нажатий буду думать еще
-        // this.isAltVisible =  !this.isAltVisible;
-        // if(Phaser.Input.Keyboard.JustDown(this.keyOne) && !Phaser.Input.Keyboard.JustDown(this.keyTwo) && !Phaser.Input.Keyboard.JustDown(this.keyThree)){ // && и ecть возможность переключиться
-        //     this.playerGAlt.setVisible(!this.isAltVisiblerue);
-        //     this.playerG.setVisible(true)
-        //     this.playerBAlt.setVisible(true);
-        //     this.playerPAlt.setVisible(true);
-        //     this.playerP.setVisible(!this.isAltVisible)
-        // }
-        // if (Phaser.Input.Keyboard.JustDown(this.keyTwo) && !Phaser.Input.Keyboard.JustDown(this.keyOne) && !Phaser.Input.Keyboard.JustDown(this.keyThree)) { // && и подобрано что то
-        //     this.playerGAlt.setVisible(true);
-        //     this.playerBAlt.setVisible(!this.isAltVisiblerue);
-        //     this.playerB.setVisible(true)
-        //     this.playerPAlt.setVisible(true);
-        //     this.playerP.setVisible(!this.isAltVisible)
-        // }
-        // if (Phaser.Input.Keyboard.JustDown(this.keyThree) && !Phaser.Input.Keyboard.JustDown(this.keyOne) && !Phaser.Input.Keyboard.JustDown(this.keyTwo)) { // && и подобрано что то
-        //     this.playerGAlt.setVisible(true);
-        //     this.playerG.setVisible(!this.isAltVisible)
-        //     this.playerBAlt.setVisible(true);
-        //     this.playerB.setVisible(this.isAltVisible)
-        //     this.playerPAlt.setVisible(!this.isAltVisiblerue);
-        //     this.playerP.setVisible(true)
-        // }
     }
     makeButton = (x, y, atlas, name) => {
         const btn = this.add.image(x, y, atlas, name).setScale(0.5).setInteractive({ useHandCursor: true });;

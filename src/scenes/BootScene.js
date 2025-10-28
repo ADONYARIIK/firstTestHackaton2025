@@ -18,8 +18,8 @@ export default class BootScene extends Phaser.Scene {
         this.load.start();
 
         this.load.on('complete', () => {
-            // this.scene.start('MainMenuScene');
-            this.scene.start('GameScene');
+            this.scene.start('MainMenuScene');
+            // this.scene.start('GameScene');
         });
     }
 
@@ -30,6 +30,10 @@ export default class BootScene extends Phaser.Scene {
         //fonts
         this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
         //levelmaps
+        // this.load.tilemapTiledJSON('test', '../teach/teachLevel.json');
+        // this.load.image('background', '../teach/tilesets/bg_castle.png');
+        // this.load.image('background', '../teach/tilesets/tileset_blocks.png');
+        // this.load.image('background', '../teach/tilesets/tileset_decor.png');
         this.load.tilemapTiledJSON('test', './src/assets/maps/testLevel.json');
         this.load.image('background', './src/assets/sprites/level1/background/bg_castle.png');
         this.load.image('blocks', './src/assets/maps/tilesets/tileset_blocks.png');

@@ -8255,47 +8255,16 @@
       "bodyType": "STATIC",
       "fixtures": [
         {
-          "shapeType": "POLYGON",
-          "isSensor": true,
+          "shapeType": "RECTANGLE",
+          "isSensor": false,
           "label": "",
-          "vertices": [
-            [
-              {
-                "x": 0,
-                "y": 70
-              },
-              {
-                "x": 0,
-                "y": 29
-              },
-              {
-                "x": 23,
-                "y": 33
-              }
-            ],
-            [
-              {
-                "x": 23,
-                "y": 33
-              },
-              {
-                "x": 52.58,
-                "y": 25.23
-              },
-              {
-                "x": 70,
-                "y": 28
-              },
-              {
-                "x": 70,
-                "y": 70
-              },
-              {
-                "x": 0,
-                "y": 70
-              }
-            ]
-          ]
+          "chamfer": 0,
+          "rectangle": {
+            "x": 0.17,
+            "y": 24.76,
+            "w": 69.66,
+            "h": 45.19
+          }
         }
       ],
       "label": "liquidLavaTop_mid"
@@ -8384,47 +8353,16 @@
       "bodyType": "STATIC",
       "fixtures": [
         {
-          "shapeType": "POLYGON",
-          "isSensor": true,
+          "shapeType": "RECTANGLE",
+          "isSensor": false,
           "label": "",
-          "vertices": [
-            [
-              {
-                "x": 0,
-                "y": 70
-              },
-              {
-                "x": 0,
-                "y": 29
-              },
-              {
-                "x": 23,
-                "y": 33
-              }
-            ],
-            [
-              {
-                "x": 23,
-                "y": 33
-              },
-              {
-                "x": 45,
-                "y": 25
-              },
-              {
-                "x": 70,
-                "y": 28
-              },
-              {
-                "x": 70,
-                "y": 70
-              },
-              {
-                "x": 0,
-                "y": 70
-              }
-            ]
-          ]
+          "chamfer": 0,
+          "rectangle": {
+            "x": 0.52,
+            "y": 26.71,
+            "w": 69.2,
+            "h": 43.35
+          }
         }
       ],
       "label": "liquidWaterTop_mid"
@@ -10756,6 +10694,11 @@
       "fixtures": [],
       "label": "tochLit"
     },
+    "tochLit2": {
+      "bodyType": "DYNAMIC",
+      "fixtures": [],
+      "label": "tochLit2"
+    },
     "tokenBeige": {
       "bodyType": "STATIC",
       "fixtures": [
@@ -10835,6 +10778,11 @@
         }
       ],
       "label": "tokenYellow"
+    },
+    "torch": {
+      "bodyType": "DYNAMIC",
+      "fixtures": [],
+      "label": "torch"
     },
     "waffleChoco": {
       "bodyType": "STATIC",

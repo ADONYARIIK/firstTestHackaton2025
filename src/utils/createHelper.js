@@ -51,6 +51,12 @@ export function createPhysicsSprite(scene, x, y, atlas, name) {
             sprite.y = body.y - 23;
             sprite.rotation = body.rotation;
         });
+    } else if (name === 'liquidLavaTop_mid') {
+        scene.events.on('update', () => {
+            sprite.x = body.x;
+            sprite.y = body.y - 13;
+            sprite.rotation = body.rotation;
+        });
     } else {
         scene.events.on('update', () => {
             sprite.x = body.x;
@@ -90,7 +96,7 @@ export function createPlayer(scene, x, y, atlas, name) {
 
     playerAnimations(scene, atlas, name);
 
-    character.sprite.animations = {
+    character.animations = {
         stand: `${name}_stand`,
         walk: `${name}_walk`,
         jump: `${name}_jump`,
