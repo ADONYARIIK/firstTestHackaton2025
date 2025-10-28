@@ -6,9 +6,9 @@
     "activeFile": "maps/testLevel.json",
     "expandedProjectPaths": [
         "maps/tilesets/test",
-        ".",
+        "maps/tilesets",
         "maps",
-        "maps/tilesets"
+        "."
     ],
     "file.lastUsedOpenFilter": "Все файлы (*)",
     "fileStates": {
@@ -49,10 +49,10 @@
         },
         "maps/testLevel.json": {
             "scale": 0.5,
-            "selectedLayer": 4,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 1051,
-                "y": 701
+                "x": 245,
+                "y": 1085
             }
         },
         "maps/testLevel.json#background": {
@@ -64,7 +64,8 @@
             "scaleInEditor": 1
         },
         "maps/testLevel.json#decor": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "maps/tilesets/test/tileset_background.tsx": {
             "scaleInDock": 1,
@@ -105,7 +106,7 @@
         "maps/tilesets/test/tileset_background.tsx"
     ],
     "project": "TestGame.tiled-project",
-    "property.type": "string",
+    "property.type": "bool",
     "recentFiles": [
         "maps/tilesets/test/tileset_background.tsx",
         "maps/tilesets/test/tileset_decor.tsx",
